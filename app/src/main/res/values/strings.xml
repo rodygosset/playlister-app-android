@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Playlister</string>
+    <string name="sign_up_message">WELCOME</string>
+    <string name="sign_up_form_title" >SIGN UP!</string>
 </resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Playlister</string>
+    <string name="sign_up_message">BIENVENUE</string>
+    <string name="sign_up_form_title" >CRÉER UN COMPTE!</string>
+</resources>
