@@ -2,4 +2,11 @@
     <string name="app_name">Playlister</string>
     <string name="sign_up_message">WELCOME</string>
     <string name="sign_up_form_title" >SIGN UP!</string>
+    <string name="sign_up_username_hint">Enter your username</string>
+    <string name="sign_up_first_name_hint">First name</string>
+    <string name="sign_up_last_name_hint">Last name</string>
+    <string name="sign_up_email_hint">Email address</string>
+    <string name="sign_up_password_hint">Choose a password</string>
+    <string name="sign_up_login_link"><u>ALREADY HAVE AN ACCOUNT? LOG IN!</u></string>
+    <string name="sign_up_button">SIGN UP</string>
 </resources>
