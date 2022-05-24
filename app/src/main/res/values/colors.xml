@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="nav_color">#CC069D98</color>
+    <color name="bottom_nav_color">#FF057e7a</color>
     <color name="form_field_background">#1A04625F</color>
     <color name="form_field_hint">#CCFFFFFF</color>
     <color name="primary">#069D98</color>

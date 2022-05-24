@@ -9,4 +9,11 @@
     <string name="sign_up_password_hint">Choose a password</string>
     <string name="sign_up_login_link"><u>ALREADY HAVE AN ACCOUNT? LOG IN!</u></string>
     <string name="sign_up_button">SIGN UP</string>
+    <string name="login_message">HELLO AGAIN</string>
+    <string name="login_username_label">USERNAME</string>
+    <string name="login_username_hint">Enter your username</string>
+    <string name="login_password_hint">Enter your password</string>
+    <string name="login_sign_up_link"><u>DON\'T HAVE AN ACCOUNT? SIGN UP!</u></string>
+    <string name="login_button">LOGIN</string>
+    <string name="login_password_label">PASSWORD</string>
 </resources>

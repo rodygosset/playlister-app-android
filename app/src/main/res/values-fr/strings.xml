@@ -10,4 +10,11 @@
     <string name="sign_up_password_hint">Choisir un mot de passe</string>
     <string name="sign_up_login_link"><u>VOUS AVEZ DÉJÀ UN COMPTE? CONNECTEZ-VOUS!</u></string>
     <string name="sign_up_button">CRÉER UN COMPTE</string>
+    <string name="login_message">VOUS REVOILÀ</string>
+    <string name="login_username_label">NOM D\'UTILISATEUR</string>
+    <string name="login_username_hint">Entrez votre nom d\'utilisateur</string>
+    <string name="login_password_hint">Entrez votre mot de passe</string>
+    <string name="login_sign_up_link"><u>VOUS N\'AVEZ PAS ENCORE DE COMPTE? CRÉEZ-EN UN!</u></string>
+    <string name="login_button">SE CONNECTER</string>
+    <string name="login_password_label">MOT DE PASSE</string>
 </resources>

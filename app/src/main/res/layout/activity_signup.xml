@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/loginMessage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
+        android:layout_weight="1"
         android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
         android:text="@string/sign_up_message"
         android:textAlignment="center"
         android:textColor="#4EF9F3"
@@ -24,9 +28,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:id="@+id/signupForm"
-        android:layout_width="0dp"
-        android:layout_height="557dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
         android:background="@drawable/nav"
         android:divider="@drawable/empty_tall_divider"
         android:orientation="vertical"
@@ -37,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <TextView
-            android:id="@+id/signUpFormHeader"
+            android:id="@+id/signUpFormUserNameLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -48,7 +52,7 @@
             android:textSize="25sp" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/signUpFormUserName"
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +62,6 @@
             android:textAppearance="@style/formField" />
 
         <LinearLayout
-            android:id="@+id/signUpFormNameLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="0dp"
@@ -69,8 +72,9 @@
             <EditText
                 android:id="@+id/signUpFormFirstName"
                 style="@style/formFieldInline"
-                android:layout_width="170dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/sign_up_first_name_hint"
@@ -83,6 +87,7 @@
                 style="@style/formFieldInline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:autofillHints=""
                 android:ems="10"
                 android:hint="@string/sign_up_last_name_hint"
@@ -105,7 +110,7 @@
             android:textColorHint="@color/form_field_hint" />
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/signUpFormSignUpLink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_up_login_link"
@@ -119,8 +124,8 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/button"
-                style="@style/signUpButton"
+                android:id="@+id/signUpButton"
+                style="@style/actionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/sign_up_button" />
@@ -128,4 +133,4 @@
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
