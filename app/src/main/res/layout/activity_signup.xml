@@ -15,30 +15,22 @@
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_weight="1"
+        android:layout_weight="0.5"
         android:fontFamily="@font/montserrat_medium"
         android:gravity="center"
         android:text="@string/sign_up_message"
         android:textAlignment="center"
         android:textColor="#4EF9F3"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/signupForm"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="30sp"/>
 
     <LinearLayout
+        android:id="@+id/nav"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="3"
+        android:layout_weight="2"
         android:background="@drawable/nav"
-        android:divider="@drawable/empty_tall_divider"
         android:orientation="vertical"
-        android:showDividers="middle"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintCircleRadius="@dimen/cardview_compat_inset_shadow"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:showDividers="middle">
 
         <TextView
             android:id="@+id/signUpFormUserNameLabel"
@@ -51,6 +43,12 @@
             android:textColor="#FFF"
             android:textSize="25sp" />
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
         <EditText
             android:id="@+id/signUpFormUserName"
             style="@style/formField"
@@ -60,6 +58,12 @@
             android:hint="@string/sign_up_username_hint"
             android:inputType="textPersonName"
             android:textAppearance="@style/formField" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -96,6 +100,12 @@
                 android:textColorHint="@color/form_field_hint" />
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
         <EditText
             android:id="@+id/signUpFormPassword"
             style="@style/formField"
@@ -109,17 +119,30 @@
             android:textAppearance="@style/formField"
             android:textColorHint="@color/form_field_hint" />
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
         <TextView
-            android:id="@+id/signUpFormSignUpLink"
+            android:id="@+id/signUpFormLoginLink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sign_up_login_link"
             android:textAlignment="center"
             android:textAppearance="@style/formLink" />
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
             android:gravity="center"
             android:orientation="vertical">
 
