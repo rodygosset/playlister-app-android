@@ -14,7 +14,7 @@ Users have access to stats for each playlist they create.
 
 ## Contribution
 
-If you are part of the development team, you can clone this repository and start working on the project using [Android Studio](https://developer.android.com/studio/) to install the API.
+If you are part of the development team, you can clone this repository and start working on the project using [Android Studio](https://developer.android.com/studio/).
 
 *Make sure you clone the repository in the folder in which Android Studio stores projects.*
 
