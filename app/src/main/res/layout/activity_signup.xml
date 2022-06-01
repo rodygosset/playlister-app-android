@@ -20,7 +20,7 @@
         android:gravity="center"
         android:text="@string/sign_up_message"
         android:textAlignment="center"
-        android:textColor="#4EF9F3"
+        android:textColor="@color/vivid_text_primary"
         android:textSize="30sp"/>
 
     <LinearLayout

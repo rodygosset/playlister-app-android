@@ -18,4 +18,7 @@
     <string name="login_button">SE CONNECTER</string>
     <string name="login_password_label">MOT DE PASSE</string>
     <string name="login_form_auth_error">Identifiants incorrects</string>
+    <string name="home_page_title">VOS PLAYLISTS</string>
+    <string name="home_logout_button">DECONNECTION</string>
+    <string name="playlist_create_button">CRÉER</string>
 </resources>

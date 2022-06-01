@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                handlelogin();
+                handleLogin();
             }
         });
         loginFormUserName = (EditText) findViewById(R.id.loginFormUserName);
@@ -61,7 +61,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void handlelogin() {
+    public void openHomeActivity(Context ctx) {
+        Intent intent = new Intent(ctx, HomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void handleLogin() {
         String username = loginFormUserName.getText().toString();
         String password = loginFormPassword.getText().toString();
         String apiResponse = "No response yet.";
@@ -93,9 +98,13 @@ public class MainActivity extends AppCompatActivity {
                                                 userDataAsJSON.get("username").toString(),
                                                 userDataAsJSON.get("first_name").toString(),
                                                 userDataAsJSON.get("family_name").toString());
-                                        Utils.alert(thisContext,
-                                                "Hello",
-                                                UserData.getUserData().getFirstName() + " " + UserData.getUserData().getLastName());
+                                        try {
+                                            openHomeActivity(thisContext);
+                                        } catch (Exception e) {
+                                            Utils.alert(thisContext,
+                                                    "ERROR",
+                                                    e.getMessage());
+                                        }
                                     } catch (JSONException e) {
                                         Utils.alert(thisContext,
                                                 "JSON ERROR",
@@ -141,9 +150,6 @@ public class MainActivity extends AppCompatActivity {
         }) {
             @Override
             public byte[] getBody() {
-                Map<String, String> body = new HashMap<String, String>();
-                body.put("username", username);
-                body.put("password", password);
                 String bodyString = "username=" + username + "&password=" + password;
                 return bodyString.getBytes(StandardCharsets.UTF_8);
             }

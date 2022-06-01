@@ -35,6 +35,12 @@ public class UserData {
     }
 
 
+    public void emptyUserData() {
+        this.authToken = null;
+        this.username = "";
+        this.firstName = "";
+        this.lastName = "";
+    }
 
     public void setUserData(String newTokenType, String newAccessToken, String newUsername, String newFirstName, String newLastName) {
         this.authToken = new AuthToken(newTokenType, newAccessToken);
