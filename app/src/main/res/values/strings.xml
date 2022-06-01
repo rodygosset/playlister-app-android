@@ -16,4 +16,5 @@
     <string name="login_sign_up_link"><u>DON\'T HAVE AN ACCOUNT? SIGN UP!</u></string>
     <string name="login_button">LOGIN</string>
     <string name="login_password_label">PASSWORD</string>
+    <string name="login_form_auth_error">Wrong crendentials</string>
 </resources>

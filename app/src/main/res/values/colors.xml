@@ -15,4 +15,6 @@
     <color name="form_field_text">#FFF</color>
     <color name="form_field_stroke">#069D98</color>
     <color name="action_button_background">#99069D98</color>
+    <color name="error_color">@color/error</color>
+    <color name="error">#E91E63</color>
 </resources>

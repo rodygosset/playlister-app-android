@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <item name="apiURL" type="string">https://playlister-app-backend.herokuapp.com</item>
+    <item name="userInfoURL" type="string">https://playlister-app-backend.herokuapp.com/api/users/me</item>
     <item name="authURL" type="string">https://playlister-app-backend.herokuapp.com/token/</item>
 </resources>

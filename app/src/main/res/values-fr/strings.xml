@@ -17,4 +17,5 @@
     <string name="login_sign_up_link"><u>VOUS N\'AVEZ PAS ENCORE DE COMPTE? CRÉEZ-EN UN!</u></string>
     <string name="login_button">SE CONNECTER</string>
     <string name="login_password_label">MOT DE PASSE</string>
+    <string name="login_form_auth_error">Identifiants incorrects</string>
 </resources>
