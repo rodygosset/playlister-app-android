@@ -30,3 +30,8 @@ Only its content, whether navigation buttons or a form, and its `android:layout_
 For all activity layouts that contain a form, like all the '*Edit < data-model >*' pages, you can refer to [`app/res/layout/activity_login.xml`](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/layout/activity_login.xml) and [`app/res/layout/activity_signup.xml`](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/layout/activity_signup.xml)
 
 For all activity layouts that display data fecthed from the API, like the [`Songs`](https://www.figma.com/proto/0Y38eFUIdXLOKgUo0S2uns/Playlister-App?node-id=39%3A131&starting-point-node-id=138%3A2&scaling=scale-down) or the [`Genres`](https://www.figma.com/proto/0Y38eFUIdXLOKgUo0S2uns/Playlister-App?node-id=59%3A2&starting-point-node-id=138%3A2&scaling=scale-down) frames in the Figma project, you can refer to [`app/res/layout/activity_home.xml`](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/layout/activity_home.xml).
+
+> ***It is encouraged to seperate layout content and style.***  
+For this reason, please create `<style></style>` elements in the [`app/res/values/themes/themes.xml`](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/values/themes.xml) file that contain the styling of the XLM elements.
+
+
