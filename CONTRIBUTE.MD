@@ -18,12 +18,12 @@ To be safe, you may reuse the root `<LinearLayout/>` present in all the existing
 
 - In each activity layout, *keep the navigation bar exactly the same* by copying the xml code found in the [`app/res/layout/activity_home.xml`](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/layout/activity_home.xml).  
 Only its content, whether navigation buttons or a form, and its `android:layout_weight` attribute may change from one activity to another.
-   - The `android:layout_weight` attribute is used to scale the height of the XML element.  
+   > The `android:layout_weight` attribute is used to scale the height of the XML element.  
    In a layout containing 2 elements, the element with the greatest `android:layout_weight` will take up most of the available space. For this attribute to have any effect, the elements must have `android:layout_height` set to `0dp`.
 
-   - [Official documentation on `LinearLayout` and `android:layout_weight`](https://developer.android.com/guide/topics/ui/layout/linear)
+   > [Official documentation on `LinearLayout` and `android:layout_weight`](https://developer.android.com/guide/topics/ui/layout/linear)
 
-   - [Quick article on the subject](https://www.educative.io/edpresso/what-is-layout-weight-in-android)
+   > [Quick article on the subject](https://www.educative.io/edpresso/what-is-layout-weight-in-android)
 
 - Each piece of text that appears on screen must be declared in [`app/res/values/strings/strings.xml`](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/values/strings.xml), and be available to use in English and in French. Please use the [translation editor](https://developer.android.com/studio/write/translations-editor) to declare each piece of text as a string value and provide both the English (as the default value) and the French translation.
 
