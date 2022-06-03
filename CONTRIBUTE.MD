@@ -21,7 +21,7 @@ Only its content, whether navigation buttons or a form, and its `android:layout_
    > The `android:layout_weight` attribute is used to scale the height of the XML element.  
    In a layout containing 2 elements, the element with the greatest `android:layout_weight` will take up most of the available space. For this attribute to have any effect, the elements must have `android:layout_height` set to `0dp`.
 
-   - [Official documentation on `LinearLayout` and `android:layout_weight`](https://developer.android.com/guide/topics/ui/layout/linear)
+   > - [Official documentation on `LinearLayout` and `android:layout_weight`](https://developer.android.com/guide/topics/ui/layout/linear)
 
    - [Quick article on the subject](https://www.educative.io/edpresso/what-is-layout-weight-in-android)
 
