@@ -13,7 +13,7 @@ To get started, you can follow these steps:
 - *Make sure the file name matches the following format* : `activity_<page-name>.xml`.  
 It must be lower case, and spaces must be replaced with `_`.
 
-- *Make the root element of the layout a LinearLayout* (refer to existing layout files, such as [this one](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/layout/activity_home.xml)).  
+- *Make the root element of the layout is a LinearLayout* (refer to existing layout files, such as [this one](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/layout/activity_home.xml)).  
 To be safe, you may reuse the root `<LinearLayout/>` present in all the existing activity layouts, and keep its properties the same.
 
 - In each activity layout, *keep the navigation bar exactly the same* by copying the xml code found in the [`app/res/layout/activity_home.xml`](https://github.com/rodygosset/playlister-app-android/blob/main/app/src/main/res/layout/activity_home.xml).  
