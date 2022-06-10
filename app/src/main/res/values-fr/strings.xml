@@ -42,8 +42,10 @@
     <string name="artist_edit_button">ENREGISTRER LES MODIFICATIONS</string>
     <string name="artist_edit_name">NOM</string>
     <string name="artist_edit_remove">SUPPRIMER</string>
-    <string name="music_library">BIBLIOTHÈQUE MUSICALE</string>
+    <string name="music_library_title">BIBLIOTHÈQUE MUSICALE</string>
     <string name="music_library_button">AJOUTER</string>
+    <string name="genre_list_title">GENRES MUSICALES</string>
+    <string name="genre_list_button">AJOUTER</string>
 
 
 </resources>

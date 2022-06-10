@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/music_library"
+                android:text="@string/genre_list_title"
                 style="@style/pageTitle"
                 />
 
@@ -53,7 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/playlistCreateButtonText"
-                    android:text="@string/music_library_button" />
+                    android:text="@string/genre_list_button" />
             </LinearLayout>
         </LinearLayout>
 
@@ -103,11 +103,11 @@
             style="@style/navButton">
 
             <TextView
-                style="@style/navButtonIconCurrent"
+                style="@style/navButtonIcon"
                 android:background="@drawable/ic_music_solid" />
 
             <TextView
-                style="@style/navButtonTextCurrent"
+                style="@style/navButtonText"
                 android:text="@string/nav_music_library"/>
 
         </LinearLayout>
@@ -122,11 +122,11 @@
             style="@style/navButton">
 
             <TextView
-                style="@style/navButtonIcon"
+                style="@style/navButtonIconCurrent"
                 android:background="@drawable/ic_guitar_solid"/>
 
             <TextView
-                style="@style/navButtonText"
+                style="@style/navButtonTextCurrent"
                 android:text="@string/nav_genres"/>
 
         </LinearLayout>
