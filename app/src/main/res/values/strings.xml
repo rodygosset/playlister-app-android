@@ -20,4 +20,9 @@
     <string name="home_page_title">YOUR PLAYLISTS</string>
     <string name="home_logout_button">LOGOUT</string>
     <string name="playlist_create_button">CREATE</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_music_library">Music</string>
+    <string name="nav_genres">Genres</string>
+    <string name="nav_artists">Artists</string>
+    <string name="nav_tags">Tags</string>
 </resources>

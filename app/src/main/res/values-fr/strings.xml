@@ -21,4 +21,9 @@
     <string name="home_page_title">VOS PLAYLISTS</string>
     <string name="home_logout_button">DECONNECTION</string>
     <string name="playlist_create_button">CRÉER</string>
+    <string name="nav_home">Acceuil</string>
+    <string name="nav_music_library">Musique</string>
+    <string name="nav_genres">Genres</string>
+    <string name="nav_artists">Artistes</string>
+    <string name="nav_tags">Tags</string>
 </resources>
