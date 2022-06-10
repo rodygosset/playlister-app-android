@@ -9,6 +9,9 @@
     <string name="sign_up_password_hint">Choose a password</string>
     <string name="sign_up_login_link"><u>ALREADY HAVE AN ACCOUNT? LOG IN!</u></string>
     <string name="sign_up_button">SIGN UP</string>
+    <string name="add_genre_button">ADD TO LIBRARY</string>
+    <string name="add_genre_form_hint">WHAT'S IT CALLED ?</string>
+    <string name="add_genre_form_name">Genre name</string>
     <string name="login_message">HELLO AGAIN</string>
     <string name="login_username_label">USERNAME</string>
     <string name="login_username_hint">Enter your username</string>
@@ -25,4 +28,18 @@
     <string name="nav_genres">Genres</string>
     <string name="nav_artists">Artists</string>
     <string name="nav_tags">Tags</string>
+    <string name="add_genre_message">ADD GENRE</string>
+    <string name="add_tag_message">ADD TAG</string>
+    <string name="add_tag_form_name">Tag name</string>
+    <string name="edit_tag_message">EDIT TAG</string>
+    <string name="edit_tag_form_hint">TAG NAME</string>
+    <string name="save_changes_button">SAVE CHANGES</string>
+    <string name="edit_tag_form_name">ENTER TAG NAME</string>
+    <string name="edit_tag_remove_link"><u>REMOVE</u></string>
+    <string name="playlists_view_title">PLAYLISTS ></string>
+    <string name="playlist_view_stats_button">VIEW STATS</string>
+    <string name="playlists_view_edit_button">EDIT</string>
+    <string name="playlists_view_remove_button">REMOVE</string>
+    <string name="artists_view_title">ARTISTS</string>
+    <string name="artists_view_add_button">ADD</string>
 </resources>
