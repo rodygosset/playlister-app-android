@@ -21,7 +21,7 @@
         android:text="@string/sign_up_message"
         android:textAlignment="center"
         android:textColor="@color/vivid_text_primary"
-        android:textSize="30sp"/>
+        android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/nav"
@@ -46,8 +46,7 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <EditText
             android:id="@+id/signUpFormUserName"
@@ -62,8 +61,7 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -103,8 +101,7 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <EditText
             android:id="@+id/signUpFormPassword"
@@ -122,8 +119,7 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <TextView
             android:id="@+id/signUpFormLoginLink"
@@ -136,15 +132,14 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <Button
                 android:id="@+id/signUpButton"

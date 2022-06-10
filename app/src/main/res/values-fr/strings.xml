@@ -26,4 +26,24 @@
     <string name="nav_genres">Genres</string>
     <string name="nav_artists">Artistes</string>
     <string name="nav_tags">Tags</string>
+    <string name="artist_add_name">"COMMENT SE NOMME-T-IL ? "</string>
+    <string name="artist_add_btn">AJOUTER À LA BIBLIOTHÈQUE</string>
+    <string name="artist_add_name_hint">"NOM "</string>
+    <string name="artist_add">AJOUTER UN ARTISTE</string>
+    <string name="genre_edit">MODIFIER LE GENRE</string>
+    <string name="genre_edit_name_hint">ENTREZ LE NOM DU GENRE</string>
+    <string name="genre_edit_button">ENREGISTRER LES MODIFICATIONS</string>
+    <string name="genre_edit_remove"><u>SUPPRIMER</u></string>
+    <string name="genre_edit_remove"><u>SUPPRIMER</u></string>
+    <string name="genre_edit_button">ENREGISTRER LES MODIFICATIONS</string>
+    <string name="artist_add">AJOUTER UN ARTIST</string>
+    <string name="artist_edit">MODIFIER L\'ARTISTE</string>
+    <string name="artist_edit_name_hint">ENTREZ LE NOM DE L\'ARTISTE</string>
+    <string name="artist_edit_button">ENREGISTRER LES MODIFICATIONS</string>
+    <string name="artist_edit_name">NOM</string>
+    <string name="artist_edit_remove">SUPPRIMER</string>
+    <string name="music_library">BIBLIOTHÈQUE MUSICALE</string>
+    <string name="music_library_button">AJOUTER</string>
+
+
 </resources>

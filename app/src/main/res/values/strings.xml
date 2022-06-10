@@ -25,4 +25,21 @@
     <string name="nav_genres">Genres</string>
     <string name="nav_artists">Artists</string>
     <string name="nav_tags">Tags</string>
+    <string name="artist_add_name">WHAT ARE THEY CALLED ?</string>
+    <string name="artist_add_btn">ADD TO LIBRARY</string>
+    <string name="artist_add_name_hint">NAME</string>
+    <string name="artist_add">ADD ARTIST</string>
+    <string name="genre_edit">EDIT GENRE</string>
+    <string name="genre_edit_name_hint">ENTER GENRE NAME</string>
+    <string name="genre_edit_button">SAVE CHANGES</string>
+    <string name="genre_edit_remove"><u>REMOVE</u></string>
+    <string name="artist_add">ADD ARTIST</string>
+    <string name="artist_edit">EDIT ARTIST</string>
+    <string name="artist_edit_name_hint">ENTER ARTIST NAME</string>
+    <string name="artist_edit_button">SAVE CHANGES</string>
+    <string name="artist_edit_name">NAME</string>
+    <string name="artist_edit_remove">REMOVE</string>
+    <string name="music_library">MUSIC LIBRARY</string>
+    <string name="music_library_button">ADD</string>
+
 </resources>
