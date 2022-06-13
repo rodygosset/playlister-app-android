@@ -26,4 +26,22 @@
     <string name="nav_genres">Genres</string>
     <string name="nav_artists">Artistes</string>
     <string name="nav_tags">Tags</string>
+    <string name="song_view_title">BIBLIOTHÈQUE ></string>
+    <string name="song_view_song_title_placeholder"><i>Titre</i></string>
+    <string name="song_view_edit_button">MODIFIER</string>
+    <string name="song_view_remove_button">SUPPRIMER</string>
+    <string name="song_view_main_song_title_placeholder">TITRE</string>
+    <string name="song_view_artist_name_placeholder">De <i>Artiste</i></string>
+    <string name="song_view_key_placeholder">Clef</string>
+    <string name="song_view_bpm_placeholder">Tempo</string>
+    <string name="song_view_url">URL</string>
+    <string name="song_view_duration">DURÉE</string>
+    <string name="song_view_release_date">DATE DE SORTIE</string>
+    <string name="song_view_url_place_holder">https://website.com/file.mp3</string>
+    <string name="song_view_duration_placeholder">X minutes et X secondes</string>
+    <string name="song_view_release_date_placeholder">Jour Mois Année</string>
+    <string name="song_view_genres">GENRES</string>
+    <string name="song_view_tags">TAGS</string>
+    <string name="song_view_genres_list_placeholder">GENRE MUSICAL</string>
+    <string name="song_view_tags_list_placeholder">TAG</string>
 </resources>

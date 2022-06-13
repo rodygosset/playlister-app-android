@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="faded_white">#BBFFFFFF</color>
+    <color name="faded_white_1">#55FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
     <color name="nav_color">#CC069D98</color>
     <color name="bottom_nav_color">#FF057e7a</color>
@@ -17,6 +18,6 @@
     <color name="form_field_stroke">#069D98</color>
     <color name="action_button_background">#99069D98</color>
     <color name="error_color">@color/error</color>
-    <color name="error">#E91E63</color>
+    <color name="error">#D90429</color>
     <color name="vivid_text_primary">#FF4EF9F3</color>
 </resources>
