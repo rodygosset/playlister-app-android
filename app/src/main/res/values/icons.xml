@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources translatable="false">
     <string name="icon_plus">&#xf067;</string>
-    <string name="icon_file">&#xf15c;</string>
     <string name="icon_edit">&#xf044;</string>
+    <string name="icon_trash">&#xf2ed;</string>
+    <string name="icon_file">&#xf15c;</string>
     <string name="icon_remove">&#xf2ed;</string>
 </resources>

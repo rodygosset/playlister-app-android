@@ -28,6 +28,24 @@
     <string name="nav_genres">Genres</string>
     <string name="nav_artists">Artists</string>
     <string name="nav_tags">Tags</string>
+    <string name="song_view_title">MUSIC LIBRARY ></string>
+    <string name="song_view_song_title_placeholder"><i>Song Title</i></string>
+    <string name="song_view_edit_button">EDIT</string>
+    <string name="song_view_remove_button">REMOVE</string>
+    <string name="song_view_main_song_title_placeholder">SONG TITLE</string>
+    <string name="song_view_artist_name_placeholder">By <i>Artist</i></string>
+    <string name="song_view_key_placeholder">Key</string>
+    <string name="song_view_bpm_placeholder">BPM</string>
+    <string name="song_view_url">URL</string>
+    <string name="song_view_duration">DURATION</string>
+    <string name="song_view_release_date">RELEASE DATE</string>
+    <string name="song_view_url_place_holder">https://website.com/file.mp3</string>
+    <string name="song_view_duration_placeholder">X minutes and X seconds</string>
+    <string name="song_view_release_date_placeholder">Month, Day Year</string>
+    <string name="song_view_genres">GENRES</string>
+    <string name="song_view_tags">TAGS</string>
+    <string name="song_view_genres_list_placeholder">GENRE</string>
+    <string name="song_view_tags_list_placeholder">TAG</string>
     <string name="add_genre_message">ADD GENRE</string>
     <string name="add_tag_message">ADD TAG</string>
     <string name="add_tag_form_name">Tag name</string>
@@ -60,5 +78,4 @@
     <string name="music_library_button">ADD</string>
     <string name="genre_list_title">MUSICAL GENRES</string>
     <string name="genre_list_button">ADD</string>
-
 </resources>
