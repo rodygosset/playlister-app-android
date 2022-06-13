@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/empty_tall_divider.xml" value="0.222" />
         <entry key="app/src/main/res/drawable/error.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/form_field.xml" value="0.222" />
+        <entry key="app/src/main/res/drawable/ic_file_lines_solid.xml" value="0.147" />
         <entry key="app/src/main/res/drawable/ic_guitar_solid.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/ic_home_solid.xml" value="0.186" />
         <entry key="app/src/main/res/drawable/ic_music_solid.xml" value="0.186" />
@@ -19,6 +20,11 @@
         <entry key="app/src/main/res/font/montserrat_bold.xml" value="0.34444444444444444" />
         <entry key="app/src/main/res/font/montserrat_medium.xml" value="0.36354166666666665" />
         <entry key="app/src/main/res/font/montserrat_semibold.xml" value="0.36354166666666665" />
+        <entry key="app/src/main/res/layout/activity_add_genre.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_add_tag.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_edit_tag.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.2773358468868966" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_edit_artist_form_layout.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_edit_genre_form_layout.xml" value="0.2749383759080318" />
         <entry key="app/src/main/res/layout/activity_genre_list_layout.xml" value="0.3098958333333333" />
@@ -27,6 +33,8 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2473902940991681" />
         <entry key="app/src/main/res/layout/activity_new_artist_form_layout.xml" value="0.20910890813459423" />
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.29775695800781254" />
+        <entry key="app/src/main/res/layout/activity_view_artists.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_view_playlist.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_songs_library.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_songs_library_layout.xml" value="0.3098958333333333" />
       </map>
