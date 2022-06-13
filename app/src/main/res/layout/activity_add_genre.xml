@@ -10,35 +10,35 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/loginMessage"
+        android:id="@+id/addGenreMessage"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_weight="0.5"
+        android:layout_weight="0.25"
         android:fontFamily="@font/montserrat_medium"
         android:gravity="center"
-        android:text="@string/sign_up_message"
+        android:text="@string/add_genre_message"
         android:textAlignment="center"
         android:textColor="@color/vivid_text_primary"
-        android:textSize="30sp" />
+        android:textSize="30sp"/>
 
     <LinearLayout
         android:id="@+id/nav"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2"
+        android:layout_weight="0.25"
         android:background="@drawable/nav"
         android:orientation="vertical"
         android:showDividers="middle">
 
         <TextView
-            android:id="@+id/signUpFormUserNameLabel"
+            android:id="@+id/addGenreForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="@string/sign_up_form_title"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/add_genre_form_hint"
             android:textAlignment="center"
             android:textColor="#FFF"
             android:textSize="25sp" />
@@ -46,22 +46,16 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"></Space>
+            android:layout_weight="1" >
+        </Space>
 
-        <EditText
-            android:id="@+id/signUpFormUserName"
-            style="@style/formField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:hint="@string/sign_up_username_hint"
-            android:inputType="textPersonName"
-            android:textAppearance="@style/formField" />
+
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"></Space>
+            android:layout_weight="1" >
+        </Space>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -70,48 +64,23 @@
             android:divider="@drawable/empty_tall_divider"
             android:orientation="horizontal"
             android:showDividers="middle">
-
-            <EditText
-                android:id="@+id/signUpFormFirstName"
-                style="@style/formFieldInline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/sign_up_first_name_hint"
-                android:inputType="textPersonName"
-                android:textAppearance="@style/formField"
-                android:textColorHint="@color/form_field_hint" />
-
-            <EditText
-                android:id="@+id/signUpFormLastName"
-                style="@style/formFieldInline"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:autofillHints=""
-                android:ems="10"
-                android:hint="@string/sign_up_last_name_hint"
-                android:inputType="textPersonName"
-                android:textAppearance="@style/formField"
-                android:textColorHint="@color/form_field_hint" />
         </LinearLayout>
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"></Space>
+            android:layout_weight="1" >
+        </Space>
 
         <EditText
-            android:id="@+id/signUpFormPassword"
+            android:id="@+id/addGenreFormGenreName"
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:autofillHints=""
             android:ems="10"
-            android:hint="@string/sign_up_password_hint"
+            android:hint="@string/add_genre_form_name"
             android:inputType="textPassword"
             android:textAppearance="@style/formField"
             android:textColorHint="@color/form_field_hint" />
@@ -119,36 +88,31 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"></Space>
-
-        <TextView
-            android:id="@+id/signUpFormLoginLink"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/sign_up_login_link"
-            android:textAlignment="center"
-            android:textAppearance="@style/formLink" />
+            android:layout_weight="1" >
+        </Space>
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"></Space>
+            android:layout_weight="1" >
+        </Space>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="20dp"
             android:gravity="center"
-            android:orientation="vertical"
-            android:padding="20dp">
+            android:orientation="vertical">
 
             <Button
-                android:id="@+id/signUpButton"
+                android:id="@+id/addGenreButton"
                 style="@style/actionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/sign_up_button" />
+                android:text="@string/add_genre_button" />
         </LinearLayout>
 
     </LinearLayout>
+
 
 </LinearLayout>
