@@ -68,7 +68,6 @@
     <string name="genre_edit_name_hint">ENTER GENRE NAME</string>
     <string name="genre_edit_button">SAVE CHANGES</string>
     <string name="genre_edit_remove"><u>REMOVE</u></string>
-    <string name="artist_add">ADD ARTIST</string>
     <string name="artist_edit">EDIT ARTIST</string>
     <string name="artist_edit_name_hint">ENTER ARTIST NAME</string>
     <string name="artist_edit_button">SAVE CHANGES</string>
@@ -78,4 +77,22 @@
     <string name="music_library_button">ADD</string>
     <string name="genre_list_title">MUSICAL GENRES</string>
     <string name="genre_list_button">ADD</string>
+    <string name="tags_title">Tags</string>
+    <string name="tags_add_button">ADD</string>
+    <string name="edit_song_message">EDIT SONG</string>
+    <string name="song_form_title">SONG INFO</string>
+    <string name="song_name_hint">Song title</string>
+    <string name="song_minor_hint">Key</string>
+    <string name="song_bpm_hint">BPM</string>
+    <string name="song_url_hint">Song URL</string>
+    <string name="song_duration_title">DURATION</string>
+    <string name="song_release_date_title">RELEASE DATE</string>
+    <string name="song_duration_hint">MM:SS</string>
+    <string name="song_release_date_hint">DD/MM/YYYY</string>
+    <string name="song_genres_title">GENRES</string>
+    <string name="song_tags_title">TAGS</string>
+    <string name="song_add_genre_button">ADD GENRE</string>
+    <string name="song_add_tag_title">ADD TAG</string>
+    <string name="song_save_changes_button">SAVE CHANGES</string>
+    <string name="add_song_message">ADD SONG</string>
 </resources>
