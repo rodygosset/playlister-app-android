@@ -66,11 +66,8 @@
     <string name="artist_add">AJOUTER UN ARTISTE</string>
     <string name="genre_edit">MODIFIER LE GENRE</string>
     <string name="genre_edit_name_hint">ENTREZ LE NOM DU GENRE</string>
-    <string name="genre_edit_button">ENREGISTRER LES MODIFICATIONS</string>
-    <string name="genre_edit_remove"><u>SUPPRIMER</u></string>
     <string name="genre_edit_remove"><u>SUPPRIMER</u></string>
     <string name="genre_edit_button">ENREGISTRER LES MODIFICATIONS</string>
-    <string name="artist_add">AJOUTER UN ARTIST</string>
     <string name="artist_edit">MODIFIER L\'ARTISTE</string>
     <string name="artist_edit_name_hint">ENTREZ LE NOM DE L\'ARTISTE</string>
     <string name="artist_edit_button">ENREGISTRER LES MODIFICATIONS</string>
@@ -80,4 +77,22 @@
     <string name="music_library_button">AJOUTER</string>
     <string name="genre_list_title">GENRES MUSICALES</string>
     <string name="genre_list_button">AJOUTER</string>
+    <string name="tags_title">Tags</string>
+    <string name="tags_add_button">AJOUTER</string>
+    <string name="edit_song_message">MODIFIER LA MUSIQUE</string>
+    <string name="song_form_title">INFORMATIONS</string>
+    <string name="song_name_hint">Titre de la musique</string>
+    <string name="song_minor_hint">Clé</string>
+    <string name="song_bpm_hint">BPM</string>
+    <string name="song_url_hint">URL de la musique</string>
+    <string name="song_duration_title">DURÉE</string>
+    <string name="song_release_date_title">DATE DE SORTIE</string>
+    <string name="song_duration_hint">MM:SS</string>
+    <string name="song_release_date_hint">DD/MM/YYYY</string>
+    <string name="song_genres_title">GENRES</string>
+    <string name="song_tags_title">TAGS</string>
+    <string name="song_add_genre_button">AJOUTER UN GENRE</string>
+    <string name="song_add_tag_title">AJOUTER UN TAG</string>
+    <string name="song_save_changes_button">ENREGISTRER</string>
+    <string name="add_song_message">AJOUTER UNE MUSIQUE</string>
 </resources>

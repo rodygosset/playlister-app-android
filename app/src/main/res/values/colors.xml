@@ -20,4 +20,5 @@
     <color name="error_color">@color/error</color>
     <color name="error">#D90429</color>
     <color name="vivid_text_primary">#FF4EF9F3</color>
+    <color name="mutli_select_background">#04625f</color>
 </resources>
