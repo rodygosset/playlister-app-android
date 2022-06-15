@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/edit_genre_message"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="100dp"
@@ -31,8 +31,12 @@
         android:background="@drawable/nav"
         android:orientation="vertical">
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
         <TextView
-            android:id="@+id/edit_genre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -45,11 +49,10 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="0.5" >
-        </Space>
+            android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/edit_genre_hint"
+            android:id="@+id/editGenreName"
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,6 +60,11 @@
             android:hint="@string/genre_edit_name_hint"
             android:inputType="textPersonName"
             android:textAppearance="@style/formField" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
 
 
         <LinearLayout
@@ -67,7 +75,7 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/edit_genre_btn"
+                android:id="@+id/editGenreButton"
                 style="@style/actionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -86,6 +94,11 @@
                 android:textAlignment="center"
                 android:textAppearance="@style/formLink" />
         </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 

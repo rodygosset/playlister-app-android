@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/editTagMessage"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
@@ -32,8 +32,12 @@
         android:orientation="vertical"
         android:showDividers="middle">
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
         <TextView
-            android:id="@+id/tagNameForm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -43,37 +47,14 @@
             android:textColor="#FFF"
             android:textSize="25sp" />
 
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
-
-
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="0dp"
-            android:divider="@drawable/empty_tall_divider"
-            android:orientation="horizontal"
-            android:showDividers="middle">
-        </LinearLayout>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/editTagNameForm"
+            android:id="@+id/editTagName"
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -88,14 +69,7 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -105,12 +79,13 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/editTagSaveChangesButton"
+                android:id="@+id/editTagSaveButton"
                 style="@style/actionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/save_changes_button" />
         </LinearLayout>
+
 
         <TextView
             android:id="@+id/editTagFormRemoveLink"
@@ -120,6 +95,11 @@
             android:layout_margin="5dp"
             android:textAlignment="center"
             android:textAppearance="@style/formLink" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 

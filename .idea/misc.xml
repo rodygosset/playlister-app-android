@@ -7,6 +7,7 @@
         <entry key="app/src/main/res/drawable/empty_tall_divider.xml" value="0.222" />
         <entry key="app/src/main/res/drawable/error.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/form_field.xml" value="0.222" />
+        <entry key="app/src/main/res/drawable/form_field_wrapper.xml" value="0.249" />
         <entry key="app/src/main/res/drawable/gradient_button.xml" value="0.221" />
         <entry key="app/src/main/res/drawable/ic_edit_solid.xml" value="0.221" />
         <entry key="app/src/main/res/drawable/ic_guitar_solid.xml" value="0.186" />
@@ -22,11 +23,17 @@
         <entry key="app/src/main/res/font/montserrat_bold.xml" value="0.34444444444444444" />
         <entry key="app/src/main/res/font/montserrat_medium.xml" value="0.36354166666666665" />
         <entry key="app/src/main/res/font/montserrat_semibold.xml" value="0.36354166666666665" />
-        <entry key="app/src/main/res/layout/activity_add_genre.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/activity_add_tag.xml" value="0.3333333333333333" />
-        <entry key="app/src/main/res/layout/activity_edit_artist.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_add_artist.xml" value="0.24376068115234378" />
+        <entry key="app/src/main/res/layout/activity_add_genre.xml" value="0.19229176839192705" />
+        <entry key="app/src/main/res/layout/activity_add_playlist.xml" value="0.28155263264973956" />
+        <entry key="app/src/main/res/layout/activity_add_song.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_add_tag.xml" value="0.24138692220052083" />
+        <entry key="app/src/main/res/layout/activity_edit_artist.xml" value="0.3245381673177083" />
         <entry key="app/src/main/res/layout/activity_edit_artist_form_layout.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_edit_genre.xml" value="0.27350427350427353" />
         <entry key="app/src/main/res/layout/activity_edit_genre_form_layout.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_edit_playlist.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_edit_song.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/activity_edit_tag.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/activity_genre_list_layout.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.34415561007049034" />
@@ -37,10 +44,14 @@
         <entry key="app/src/main/res/layout/activity_signup.xml" value="0.29775695800781254" />
         <entry key="app/src/main/res/layout/activity_song_view.xml" value="0.3333333333333333" />
         <entry key="app/src/main/res/layout/activity_songs_library_layout.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_tags.xml" value="0.17135416666666667" />
         <entry key="app/src/main/res/layout/activity_view_artists.xml" value="0.3333333333333333" />
+        <entry key="app/src/main/res/layout/activity_view_genres.xml" value="0.27350427350427353" />
+        <entry key="app/src/main/res/layout/activity_view_song.xml" value="0.3333333333333333" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

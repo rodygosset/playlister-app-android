@@ -10,15 +10,15 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/loginMessage"
+        android:padding="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_weight="0.8"
+        android:layout_weight="0.5"
         android:fontFamily="@font/montserrat_medium"
         android:gravity="center"
-        android:text="@string/add_song_message"
+        android:text="@string/song_add_message"
         android:textAlignment="center"
         android:textColor="@color/vivid_text_primary"
         android:textSize="30sp" />
@@ -32,8 +32,12 @@
         android:orientation="vertical"
         android:showDividers="middle">
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
         <TextView
-            android:id="@+id/signUpFormUserNameLabel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -46,10 +50,10 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"></Space>
+            android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/signUpFormUserName"
+            android:id="@+id/newSongFormSongTitle"
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -57,6 +61,11 @@
             android:hint="@string/song_name_hint"
             android:inputType="textPersonName"
             android:textAppearance="@style/formField" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -67,7 +76,7 @@
             android:showDividers="middle">
 
             <EditText
-                android:id="@+id/signUpFormFirstName"
+                android:id="@+id/newSongFormKey"
                 style="@style/formFieldInline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -80,7 +89,7 @@
                 android:textColorHint="@color/form_field_hint" />
 
             <EditText
-                android:id="@+id/signUpFormLastName"
+                android:id="@+id/newSongFormBPM"
                 style="@style/formFieldInline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,8 +102,13 @@
                 android:textColorHint="@color/form_field_hint" />
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
         <EditText
-            android:id="@+id/signUpFormUserName"
+            android:id="@+id/newSongFormURL"
             style="@style/formField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -103,6 +117,10 @@
             android:inputType="textPersonName"
             android:textAppearance="@style/formField" />
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
 
 
         <LinearLayout
@@ -114,7 +132,6 @@
             android:showDividers="middle">
 
             <TextView
-                android:id="@+id/signUpFormUserNameLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -126,7 +143,6 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/signUpFormUserNameLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -143,7 +159,7 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"></Space>
+            android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -154,7 +170,7 @@
             android:showDividers="middle">
 
             <EditText
-                android:id="@+id/signUpFormFirstName"
+                android:id="@+id/newSongFormDuration"
                 style="@style/formFieldInline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -167,7 +183,7 @@
                 android:textColorHint="@color/form_field_hint" />
 
             <EditText
-                android:id="@+id/signUpFormLastName"
+                android:id="@+id/newSongFormReleaseDate"
                 style="@style/formFieldInline"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -180,6 +196,11 @@
                 android:textColorHint="@color/form_field_hint" />
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -189,7 +210,6 @@
             android:showDividers="middle">
 
             <TextView
-                android:id="@+id/signUpFormUserNameLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -201,7 +221,6 @@
                 android:textSize="20sp" />
 
             <TextView
-                android:id="@+id/signUpFormUserNameLabel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -214,6 +233,11 @@
 
         </LinearLayout>
 
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -222,89 +246,88 @@
             android:orientation="horizontal"
             android:showDividers="middle">
 
-            <EditText
-                android:id="@+id/signUpFormFirstName"
+            <TextView
+                android:id="@+id/addSongGenres"
                 style="@style/formFieldInlineWrapper"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:autofillHints=""
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textAppearance="@style/formField"
-                android:textColorHint="@color/form_field_hint" />
+                android:layout_weight="1" />
 
-            <EditText
-                android:id="@+id/signUpFormLastName"
+            <TextView
+                android:id="@+id/addSongTags"
                 style="@style/formFieldInlineWrapper"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:autofillHints=""
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:textAppearance="@style/formField"
-                android:textColorHint="@color/form_field_hint" />
+                android:layout_weight="1" />
+
+
         </LinearLayout>
 
         <Space
             android:layout_width="0dp"
-            android:layout_height="16dp"
-            android:layout_weight="1"></Space>
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="0dp"
-            android:divider="@drawable/empty_tall_divider"
-            android:orientation="horizontal"
-
-            android:showDividers="middle">
-
+            android:orientation="horizontal">
 
             <LinearLayout
-                style="@style/addGenreButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
 
-                <TextView
-                    style="@style/addGenreAndTag"
+                <LinearLayout
+                    style="@style/addGenreButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/fa_solid_900"
-                    android:text="@string/icon_plus" />
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        style="@style/addGenreAndTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fa_solid_900"
+                        android:text="@string/icon_plus" />
 
 
-                <TextView
-                    style="@style/addGenreAndTag"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/song_add_genre_button" />
+                    <TextView
+                        style="@style/addGenreAndTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/song_add_genre_button" />
+                </LinearLayout>
+
+
             </LinearLayout>
-
-
-
 
             <LinearLayout
-                style="@style/addTagButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
 
-                <TextView
-                    style="@style/addGenreAndTag"
+                <LinearLayout
+                    style="@style/addTagButton"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/fa_solid_900"
-                    android:text="@string/icon_plus" />
+                    android:layout_height="wrap_content">
 
-                <TextView
-                    style="@style/addGenreAndTag"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/song_add_tag_title" />
+                    <TextView
+                        style="@style/addGenreAndTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fa_solid_900"
+                        android:text="@string/icon_plus" />
+
+                    <TextView
+                        style="@style/addGenreAndTag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/song_add_tag_title" />
+                </LinearLayout>
+
+
             </LinearLayout>
+
 
 
         </LinearLayout>
@@ -313,12 +336,7 @@
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1"></Space>
-
-        <Space
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_weight="1"></Space>
+            android:layout_weight="1"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -328,12 +346,17 @@
             android:padding="20dp">
 
             <Button
-                android:id="@+id/signUpButton"
+                android:id="@+id/newSongButton"
                 style="@style/actionButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/song_save_changes_button" />
+                android:text="@string/song_add_save_button" />
         </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 

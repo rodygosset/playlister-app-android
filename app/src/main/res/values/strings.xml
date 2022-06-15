@@ -60,7 +60,7 @@
     <string name="playlists_view_remove_button">REMOVE</string>
     <string name="artists_view_title">ARTISTS</string>
     <string name="artists_view_add_button">ADD</string>
-    <string name="artist_add_name">WHAT ARE THEY CALLED ?</string>
+    <string name="artist_add_question">WHAT\'S THEIR NAME ?</string>
     <string name="artist_add_btn">ADD TO LIBRARY</string>
     <string name="artist_add_name_hint">NAME</string>
     <string name="artist_add">ADD ARTIST</string>
@@ -77,7 +77,7 @@
     <string name="music_library_button">ADD</string>
     <string name="genre_list_title">MUSICAL GENRES</string>
     <string name="genre_list_button">ADD</string>
-    <string name="tags_title">Tags</string>
+    <string name="tags_view_title">Tags</string>
     <string name="tags_add_button">ADD</string>
     <string name="edit_song_message">EDIT SONG</string>
     <string name="song_form_title">SONG INFO</string>
@@ -93,6 +93,18 @@
     <string name="song_tags_title">TAGS</string>
     <string name="song_add_genre_button">ADD GENRE</string>
     <string name="song_add_tag_title">ADD TAG</string>
-    <string name="song_save_changes_button">SAVE CHANGES</string>
-    <string name="add_song_message">ADD SONG</string>
+    <string name="song_edit_save_button">SAVE CHANGES</string>
+    <string name="song_add_message">ADD SONG</string>
+    <string name="song_add_save_button">ADD TO LIBRARY</string>
+    <string name="playlist_add_title">NEW PLAYLIST</string>
+    <string name="playlist_add_name">GIVE IT A NAME</string>
+    <string name="playlist_add_songs">START ADDING SONGS</string>
+    <string name="playlist_add_name_hint">Name of the playlist</string>
+    <string name="playlist_add_tags">ADD TAGS</string>
+    <string name="playlist_add_song_add_button">ADD SONG</string>
+    <string name="playlist_edit_title">EDIT PLAYLIST</string>
+    <string name="playlist_edit_name">NAME</string>
+    <string name="playlist_edit_songs">SONGS</string>
+    <string name="playlist_edit_tags">TAGS</string>
+    <string name="playlist_add_submit">CREATE</string>
 </resources>
