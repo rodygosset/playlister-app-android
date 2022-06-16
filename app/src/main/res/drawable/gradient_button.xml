@@ -9,25 +9,6 @@
         android:startColor="#D90429"
         android:endColor="#99069D98" />
 
-    <!--<gradient
-        android:type="linear"
-        android:startX="81.5"
-        android:startY="40.5"
-        android:endX="244.5"
-        android:endY="40.5"
-        >
-        <item
-            android:color="#D90429"
-            android:offset="0"
-            />
-
-        <item
-            android:color="#99069D98"
-            android:offset="1"
-            />
-
-    </gradient>-->
-
     <padding
         android:top="30dp"
         android:left="50dp"

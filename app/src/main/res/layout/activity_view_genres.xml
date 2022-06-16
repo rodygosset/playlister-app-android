@@ -131,10 +131,12 @@
                         android:paddingRight="10dp">
 
                         <TextView
+                            android:id="@+id/genresListPseudoElementSongs"
                             style="@style/listItemDataImportant"
                             android:text="@string/genre_list_item_songs_placeholder"/>
 
                         <TextView
+                            android:id="@+id/genresListPseudoElementPlaylists"
                             style="@style/listItemData"
                             android:text="@string/genre_list_item_playlists_placeholder"/>
 
