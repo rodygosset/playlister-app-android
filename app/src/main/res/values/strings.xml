@@ -108,6 +108,6 @@
     <string name="playlist_edit_tags">TAGS</string>
     <string name="playlist_add_submit">CREATE</string>
     <string name="genre_list_item_name_placeholder">NAME OF GENRE</string>
-    <string name="genre_list_item_songs_placeholder">N songs</string>
-    <string name="genre_list_item_playlists_placeholder">N playlists</string>
+    <string name="genre_list_item_songs_placeholder">songs</string>
+    <string name="genre_list_item_playlists_placeholder">playlists</string>
 </resources>

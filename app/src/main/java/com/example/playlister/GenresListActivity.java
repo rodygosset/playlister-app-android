@@ -1,9 +1,9 @@
 package com.example.playlister;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
+import android.view.LayoutInflater;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -22,9 +22,15 @@ import java.util.Map;
 
 public class GenresListActivity extends AppCompatActivity {
 
+    Context thisContext = this;
+
     String data;
 
     UserData userData;
+
+    JSONArray listElements;
+
+    LinearLayout[] UIListElements;
 
     @Override
     protected void onCreate(Bundle savedInstance) {
@@ -34,6 +40,47 @@ public class GenresListActivity extends AppCompatActivity {
         userData = appContext.getUserData();
         Utils.initNav(this);
         getData();
+    }
+
+    public void buildUIList() {
+        LinearLayout listContainer = (LinearLayout) findViewById(R.id.mainListContainer);
+        this.UIListElements = new LinearLayout[listElements.length()];
+        LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        // go through the array of JSON objects
+        for(int i = 0; i < listElements.length(); i++) {
+            // create a view for each element in the array
+            UIListElements[i] = (LinearLayout) layoutInflater.inflate(R.layout.genres_list_item, null);
+            try {
+
+                JSONObject element = listElements.getJSONObject(i);
+                ((TextView)UIListElements[i].findViewById(R.id.genresListElementName)).setText(element.getString("name"));
+
+                // make a POST request to the API
+                // to get the number of songs associated to this genre
+
+                String postData = "{ genres: [ \"" + element.getString("name") + "\" ] }";
+                String searchURL = Utils.getString(this, R.string.songsURL) + "search/nb";
+
+                int finalI = i;
+                Utils.postData(this, searchURL, new JSONObject(postData),
+                        new Response.Listener<JSONObject>() {
+                            @Override
+                            public void onResponse(JSONObject response) {
+                                try {
+                                    ((TextView)UIListElements[finalI].findViewById(R.id.genresListElementSongs)).setText(response.getString("nb_results") + " " + Utils.getString(thisContext, R.string.genre_list_item_songs_placeholder));
+                                    listContainer.addView(UIListElements[finalI], listContainer.getChildCount() - 1);
+                                } catch (JSONException e) {
+                                    e.printStackTrace();
+                                }
+                            }
+                        });
+            } catch (JSONException e) {
+                Utils.alert(this,
+                        "JSON ERROR",
+                        //Integer.toString(error.networkResponse.statusCode)
+                        e.toString());
+            }
+        }
     }
     
     public void getData() {
@@ -53,10 +100,11 @@ public class GenresListActivity extends AppCompatActivity {
 
                 // parse response as a JSON Array
                 try {
-                    JSONArray array = new JSONArray(response);
-                    Utils.alert(thisContext,
+                    listElements = new JSONArray(response);
+                    /*Utils.alert(thisContext,
                             "1ST ELEMENT",
-                            array.get(0).toString());
+                            listElements.get(0).toString());*/
+                    buildUIList();
                 } catch (JSONException e) {
                     Utils.alert(thisContext,
                             "JSON ERROR",

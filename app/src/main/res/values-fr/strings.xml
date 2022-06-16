@@ -109,6 +109,6 @@
     <string name="playlist_edit_tags">TAGS</string>
     <string name="playlist_add_submit">CRÉER</string>
     <string name="genre_list_item_name_placeholder">NOM DU GENRE MUSICAL</string>
-    <string name="genre_list_item_songs_placeholder">N chansons</string>
-    <string name="genre_list_item_playlists_placeholder">N playlists</string>
+    <string name="genre_list_item_songs_placeholder">chansons</string>
+    <string name="genre_list_item_playlists_placeholder">playlists</string>
 </resources>
