@@ -27,7 +27,11 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+
+
 public class MainActivity extends AppCompatActivity {
+
+
 
     TextView signUpLink;
     Button loginButton;
@@ -56,8 +60,15 @@ public class MainActivity extends AppCompatActivity {
         loginFormPassword = (EditText) findViewById(R.id.loginFormPassword);
     }
 
+    // methods to open activities
+
     public void openSignUpActivity() {
         Intent intent = new Intent(this, SignUpActivity.class);
+        startActivity(intent);
+    }
+
+    public void openGenresListActivity() {
+        Intent intent = new Intent(this, GenresListActivity.class);
         startActivity(intent);
     }
 
@@ -86,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                             AuthToken token = new AuthToken(tokenAsJSON.get("token_type").toString(),
                                     tokenAsJSON.get("access_token").toString());
                             // get user data
+                            // get the URL to make the request to
                             String userDataReqURL = Utils.getString(thisContext, R.string.userInfoURL);
                             StringRequest userDataRequest = new StringRequest(Request.Method.GET,
                                     userDataReqURL, new Response.Listener<String>() {
@@ -99,7 +111,8 @@ public class MainActivity extends AppCompatActivity {
                                                 userDataAsJSON.get("first_name").toString(),
                                                 userDataAsJSON.get("family_name").toString());
                                         try {
-                                            openHomeActivity(thisContext);
+                                            // go to the Home page
+                                            openGenresListActivity();
                                         } catch (Exception e) {
                                             Utils.alert(thisContext,
                                                     "ERROR",

@@ -14,7 +14,7 @@
     <color name="form_field_background">#1A04625F</color>
     <color name="form_field_hint">#CCFFFFFF</color>
     <color name="primary">#069D98</color>
-    <color name="form_field_text">#FFF</color>
+    <color name="form_field_text">#FFFFFF</color>
     <color name="form_field_stroke">#069D98</color>
     <color name="action_button_background">#99069D98</color>
     <color name="error_color">@color/error</color>

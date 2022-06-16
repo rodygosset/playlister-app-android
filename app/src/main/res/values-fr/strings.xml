@@ -11,13 +11,13 @@
     <string name="sign_up_login_link"><u>VOUS AVEZ DÉJÀ UN COMPTE? CONNECTEZ-VOUS!</u></string>
     <string name="sign_up_button">CRÉER UN COMPTE</string>
     <string name="add_genre_button">AJOUTER À LA LIBRAIRIE</string>
-    <string name="add_genre_form_hint">COMMENT VOULEZ-VOUS L'APPELER ?</string>
+    <string name="add_genre_form_hint">COMMENT VOULEZ-VOUS L\\\'APPELER ?</string>
     <string name="add_genre_form_name">Nom du genre</string>
     <string name="login_message">VOUS REVOILÀ</string>
     <string name="login_username_label">NOM D\'UTILISATEUR</string>
     <string name="login_username_hint">Entrez votre nom d\'utilisateur</string>
     <string name="login_password_hint">Entrez votre mot de passe</string>
-    <string name="login_sign_up_link"><u>VOUS N\'AVEZ PAS ENCORE DE COMPTE? CRÉEZ-EN UN!</u></string>
+    <string name="login_sign_up_link"><u>VOUS N\\\'AVEZ PAS ENCORE DE COMPTE? CRÉEZ-EN UN!</u></string>
     <string name="login_button">SE CONNECTER</string>
     <string name="login_password_label">MOT DE PASSE</string>
     <string name="login_form_auth_error">Identifiants incorrects</string>
@@ -68,8 +68,8 @@
     <string name="genre_edit_name_hint">ENTREZ LE NOM DU GENRE</string>
     <string name="genre_edit_remove"><u>SUPPRIMER</u></string>
     <string name="genre_edit_button">ENREGISTRER LES MODIFICATIONS</string>
-    <string name="artist_edit">MODIFIER L\'ARTISTE</string>
-    <string name="artist_edit_name_hint">ENTREZ LE NOM DE L\'ARTISTE</string>
+    <string name="artist_edit">MODIFIER L\\\'ARTISTE</string>
+    <string name="artist_edit_name_hint">ENTREZ LE NOM DE L\\\'ARTISTE</string>
     <string name="artist_edit_button">ENREGISTRER LES MODIFICATIONS</string>
     <string name="artist_edit_name">NOM</string>
     <string name="artist_edit_remove">SUPPRIMER</string>
@@ -94,7 +94,6 @@
     <string name="song_add_genre_button">AJOUTER UN GENRE</string>
     <string name="song_add_tag_title">AJOUTER UN TAG</string>
     <string name="song_edit_save_button">ENREGISTRER</string>
-    <string name="song_add_message">AJOUTER UNE MUSIQUE</string>
     <string name="artists_view_add_button">NOUVEAU</string>
     <string name="song_add_message">AJOUTER UNE CHANSON</string>
     <string name="song_add_save_button">AJOUTER À LA BIBLIOTHÈQUE</string>
