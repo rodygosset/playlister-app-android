@@ -4,4 +4,5 @@
     <item name="userInfoURL" type="string">https://playlister-app-backend.herokuapp.com/api/users/me</item>
     <item name="authURL" type="string">https://playlister-app-backend.herokuapp.com/token/</item>
     <item name="genresURL" type="string">https://playlister-app-backend.herokuapp.com/api/genres/</item>
+    <item name="tagsURL" type="string">https://playlister-app-backend.herokuapp.com/api/tags/</item>
 </resources>
