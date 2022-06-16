@@ -2,6 +2,9 @@ package com.example.playlister;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.Intent;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Utils {
 
@@ -14,5 +17,13 @@ public class Utils {
                 .setTitle(title)
                 .setMessage(message)
                 .show();
+    }
+
+
+    // open an activity
+
+    public static void openActivity(Context ctx, Class Activity) {
+        Intent intent = new Intent(ctx, Activity);
+        ctx.startActivity(intent);
     }
 }

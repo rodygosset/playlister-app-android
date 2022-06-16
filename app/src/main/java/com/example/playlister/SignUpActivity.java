@@ -1,5 +1,6 @@
 package com.example.playlister;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class SignUpActivity extends AppCompatActivity {
+
+    Context thisContext = this;
 
     TextView loginLink;
 
@@ -19,14 +22,9 @@ public class SignUpActivity extends AppCompatActivity {
         loginLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openLoginActivity();
+                Utils.openActivity(thisContext, MainActivity.class);
             }
         });
-    }
-
-    public void openLoginActivity() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
     }
 
 }

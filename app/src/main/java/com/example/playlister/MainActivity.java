@@ -4,21 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     EditText loginFormUserName;
     EditText loginFormPassword;
 
+    Context thisContext = this;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         signUpLink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openSignUpActivity();
+                Utils.openActivity(thisContext, SignUpActivity.class);
             }
         });
         loginButton = (Button) findViewById(R.id.loginButton);
@@ -60,29 +57,12 @@ public class MainActivity extends AppCompatActivity {
         loginFormPassword = (EditText) findViewById(R.id.loginFormPassword);
     }
 
-    // methods to open activities
-
-    public void openSignUpActivity() {
-        Intent intent = new Intent(this, SignUpActivity.class);
-        startActivity(intent);
-    }
-
-    public void openGenresListActivity() {
-        Intent intent = new Intent(this, GenresListActivity.class);
-        startActivity(intent);
-    }
-
-    public void openHomeActivity(Context ctx) {
-        Intent intent = new Intent(ctx, HomeActivity.class);
-        startActivity(intent);
-    }
 
     public void handleLogin() {
         String username = loginFormUserName.getText().toString();
         String password = loginFormPassword.getText().toString();
         String apiResponse = "No response yet.";
         String requestURL = Utils.getString(this, R.string.authURL);
-        Context thisContext = this;
         StringRequest stringRequest = new StringRequest(Request.Method.POST,
                 requestURL,
                 new Response.Listener<String>() {
@@ -112,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                                                 userDataAsJSON.get("family_name").toString());
                                         try {
                                             // go to the Home page
-                                            openGenresListActivity();
+                                            Utils.openActivity(thisContext, GenresListActivity.class);
                                         } catch (Exception e) {
                                             Utils.alert(thisContext,
                                                     "ERROR",
