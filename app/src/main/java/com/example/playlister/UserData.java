@@ -1,5 +1,7 @@
 package com.example.playlister;
 
+import android.app.Application;
+
 public class UserData {
 
     private AuthToken authToken;
@@ -9,13 +11,11 @@ public class UserData {
     private String lastName;
 
 
-    private static final UserData singleInstance = new UserData();
+    // private static final UserData singleInstance = new UserData();
 
-    public static UserData getUserData() {
-        return singleInstance;
-    }
+    // public static UserData getUserData() { return singleInstance; }
 
-    private UserData() {
+    UserData() {
     }
 
     public String getAuthHeader() {
@@ -49,3 +49,4 @@ public class UserData {
         this.lastName = newLastName;
     }
 }
+

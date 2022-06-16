@@ -51,5 +51,19 @@ public class Utils {
                 Utils.openActivity(ctx, GenresListActivity.class);
             }
         });
+
+        artistsList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utils.openActivity(ctx, ArtistsListActivity.class);
+            }
+        });
+
+        tagsListActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utils.openActivity(ctx, TagsListActivity.class);
+            }
+        });
     }
 }

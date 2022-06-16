@@ -12,18 +12,22 @@ public class HomeActivity extends AppCompatActivity {
         TextView message;
         TextView logoutButton;
 
+        UserData userData;
+
         @Override
         protected void onCreate(Bundle savedInstance) {
             super.onCreate(savedInstance);
             setContentView(R.layout.activity_home);
+            AppContext appContext = (AppContext) getApplicationContext();
+            userData = appContext.getUserData();
             Utils.initNav(this);
             message = (TextView) findViewById(R.id.homeMessage);
-            message.setText("Hello, " + UserData.getUserData().getFirstName() + " " + UserData.getUserData().getLastName() + "!");
+            message.setText("Hello, " + userData.getFirstName() + " " + userData.getLastName() + "!");
             logoutButton = (TextView) findViewById(R.id.homeLogoutButton);
             logoutButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    UserData.getUserData().emptyUserData();
+                    userData.emptyUserData();
                     openLoginActivity();
                 }
             });

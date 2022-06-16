@@ -161,7 +161,7 @@
         </Space>
 
         <LinearLayout
-            android:id="@+id/navTagsButtonCurrent"
+            android:id="@+id/navTagsButton"
             style="@style/navButton">
 
             <TextView
@@ -169,7 +169,7 @@
                 android:background="@drawable/ic_tag_solid" />
 
             <TextView
-                style="@style/navButtonText"
+                style="@style/navButtonTextCurrent"
                 android:text="@string/nav_tags"/>
 
         </LinearLayout>

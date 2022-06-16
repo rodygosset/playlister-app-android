@@ -23,10 +23,15 @@ public class ArtistsListActivity extends AppCompatActivity {
 
     String data;
 
+    UserData userData;
+
     @Override
     protected void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         setContentView(R.layout.activity_view_artists);
+        AppContext appContext = (AppContext) getApplicationContext();
+        userData = appContext.getUserData();
+        Utils.initNav(this);
         getData();
     }
 
@@ -62,7 +67,7 @@ public class ArtistsListActivity extends AppCompatActivity {
             public Map<String, String> getHeaders() {
                 Map<String, String> hdrs = new HashMap<String, String>();
                 hdrs.put("Content-Type", "application/json; charset=UTF-8");
-                hdrs.put("Authorization", UserData.getUserData().getAuthHeader());
+                hdrs.put("Authorization", userData.getAuthHeader());
                 return hdrs;
             }
         };

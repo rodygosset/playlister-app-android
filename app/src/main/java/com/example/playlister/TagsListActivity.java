@@ -23,10 +23,15 @@ public class TagsListActivity extends AppCompatActivity {
 
     String data;
 
+    UserData userData;
+
     @Override
     protected void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         setContentView(R.layout.activity_view_tags);
+        AppContext appContext = (AppContext) getApplicationContext();
+        userData = appContext.getUserData();
+        Utils.initNav(this);
         getData();
     }
 
@@ -52,7 +57,7 @@ public class TagsListActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Utils.alert(thisContext,
-                        "AUTH ERROR",
+                        "STUPID FILLING ERROR",
                         //Integer.toString(error.networkResponse.statusCode)
                         error.toString());
             }
@@ -62,7 +67,7 @@ public class TagsListActivity extends AppCompatActivity {
             public Map<String, String> getHeaders() {
                 Map<String, String> hdrs = new HashMap<String, String>();
                 hdrs.put("Content-Type", "application/json; charset=UTF-8");
-                hdrs.put("Authorization", UserData.getUserData().getAuthHeader());
+                hdrs.put("Authorization", userData.getAuthHeader());
                 return hdrs;
             }
         };
