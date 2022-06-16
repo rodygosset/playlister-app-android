@@ -13,6 +13,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -45,11 +46,23 @@ public class GenresListActivity extends AppCompatActivity {
                 genresDataURL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                //
-                Utils.alert(thisContext,
+                /*Utils.alert(thisContext,
                         "SUCCESS",
                         //Integer.toString(error.networkResponse.statusCode)
-                        response);
+                        response);*/
+
+                // parse response as a JSON Array
+                try {
+                    JSONArray array = new JSONArray(response);
+                    Utils.alert(thisContext,
+                            "1ST ELEMENT",
+                            array.get(0).toString());
+                } catch (JSONException e) {
+                    Utils.alert(thisContext,
+                            "JSON ERROR",
+                            //Integer.toString(error.networkResponse.statusCode)
+                            e.toString());
+                }
             }
         }, new Response.ErrorListener() {
             // in case there's an error

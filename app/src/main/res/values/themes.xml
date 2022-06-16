@@ -60,7 +60,7 @@
 
     <style name="pageTitle">
         <item name="android:fontFamily">@font/montserrat_medium</item>
-        <item name="android:textSize">20sp</item>
+        <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -175,6 +175,13 @@
         <item name="android:layout_marginBottom">5dp</item>
     </style>
 
+    <style name="listItemIcon">
+        <item name="android:fontFamily">@font/fa_solid_900</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_width">35dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
     <style name="navButtonTextCurrent">
         <item name="android:fontFamily">@font/montserrat_medium</item>
         <item name="android:layout_height">wrap_content</item>
@@ -268,6 +275,36 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/gradient_button</item>
+    </style>
+
+    <style name="listItemName">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="listItemDataImportant">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/vivid_text_primary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="listItemData">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/faded_text_primary</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
     </style>
 
 </resources>

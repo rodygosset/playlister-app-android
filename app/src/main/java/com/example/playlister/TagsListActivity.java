@@ -57,7 +57,7 @@ public class TagsListActivity extends AppCompatActivity {
             @Override
             public void onErrorResponse(VolleyError error) {
                 Utils.alert(thisContext,
-                        "STUPID FILLING ERROR",
+                        "",
                         //Integer.toString(error.networkResponse.statusCode)
                         error.toString());
             }
