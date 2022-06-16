@@ -16,6 +16,7 @@ public class HomeActivity extends AppCompatActivity {
         protected void onCreate(Bundle savedInstance) {
             super.onCreate(savedInstance);
             setContentView(R.layout.activity_home);
+            Utils.initNav(this);
             message = (TextView) findViewById(R.id.homeMessage);
             message.setText("Hello, " + UserData.getUserData().getFirstName() + " " + UserData.getUserData().getLastName() + "!");
             logoutButton = (TextView) findViewById(R.id.homeLogoutButton);

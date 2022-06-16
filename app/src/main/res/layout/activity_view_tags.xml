@@ -81,6 +81,7 @@
         android:gravity="center">
 
         <LinearLayout
+            android:id="@+id/navHomeButton"
             style="@style/navButton">
 
             <TextView
@@ -100,6 +101,7 @@
         </Space>
 
         <LinearLayout
+            android:id="@+id/navMusicLibraryButton"
             style="@style/navButton">
 
             <TextView
@@ -119,6 +121,7 @@
         </Space>
 
         <LinearLayout
+            android:id="@+id/navGenresButton"
             style="@style/navButton">
 
             <TextView
@@ -138,6 +141,7 @@
         </Space>
 
         <LinearLayout
+            android:id="@+id/navArtistButton"
             style="@style/navButton">
 
             <TextView
@@ -157,6 +161,7 @@
         </Space>
 
         <LinearLayout
+            android:id="@+id/navTagsButtonCurrent"
             style="@style/navButton">
 
             <TextView
@@ -164,7 +169,7 @@
                 android:background="@drawable/ic_tag_solid" />
 
             <TextView
-                style="@style/navButtonTextCurrent"
+                style="@style/navButtonText"
                 android:text="@string/nav_tags"/>
 
         </LinearLayout>
