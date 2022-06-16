@@ -45,6 +45,13 @@ public class Utils {
             }
         });
 
+        musicLibraryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utils.openActivity(ctx, MusicLibraryActivity.class);
+            }
+        });
+
         genresListButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

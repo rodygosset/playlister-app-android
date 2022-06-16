@@ -20,12 +20,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class MusicLibraryActivity extends AppCompatActivity {
+
     String data;
+
+    AppContext appContext;
+    UserData userData;
 
     @Override
     protected void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
         setContentView(R.layout.activity_music_library);
+        appContext = (AppContext) getApplicationContext();
+        userData = appContext.getUserData();
+        Utils.initNav(this);
         getData();
     }
 
@@ -61,7 +68,7 @@ public class MusicLibraryActivity extends AppCompatActivity {
             public Map<String, String> getHeaders() {
                 Map<String, String> hdrs = new HashMap<String, String>();
                 hdrs.put("Content-Type", "application/json; charset=UTF-8");
-                hdrs.put("Authorization", UserData.getUserData().getAuthHeader());
+                hdrs.put("Authorization", userData.getAuthHeader());
                 return hdrs;
             }
         };

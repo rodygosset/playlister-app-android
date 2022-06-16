@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                                                 userDataAsJSON.get("family_name").toString());
                                         try {
                                             // go to the Home page
-                                            Utils.openActivity(thisContext, MusicLibraryActivity.class);
+                                            Utils.openActivity(thisContext, HomeActivity.class);
                                         } catch (Exception e) {
                                             Utils.alert(thisContext,
                                                     "ERROR",
