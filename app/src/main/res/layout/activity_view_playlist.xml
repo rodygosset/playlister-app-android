@@ -22,7 +22,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tags_view_title"
+                android:text="@string/playlists_view_title"
                 style="@style/pageTitle"
                 />
 
@@ -47,13 +47,71 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/playlistCreateButtonText"
-                    android:text="@string/icon_plus"
+                    android:text="@string/icon_file"
                     android:fontFamily="@font/fa_solid_900" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     style="@style/playlistCreateButtonText"
-                    android:text="@string/tags_add_button" />
+                    android:text="@string/playlist_view_stats_button" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/playlistCreateButton">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/icon_file"
+                    android:fontFamily="@font/fa_solid_900" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/playlists_view_edit_button" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/error"
+                style="@style/playlistCreateButton">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/icon_remove"
+                    android:fontFamily="@font/fa_solid_900" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/playlists_view_remove_button" />
+
             </LinearLayout>
         </LinearLayout>
 
@@ -81,15 +139,14 @@
         android:gravity="center">
 
         <LinearLayout
-            android:id="@+id/navHomeButton"
             style="@style/navButton">
 
             <TextView
-                style="@style/navButtonIcon"
+                style="@style/navButtonIconCurrent"
                 android:background="@drawable/ic_home_solid"/>
 
             <TextView
-                style="@style/navButtonText"
+                style="@style/navButtonTextCurrent"
                 android:text="@string/nav_home"/>
 
         </LinearLayout>
@@ -101,7 +158,6 @@
         </Space>
 
         <LinearLayout
-            android:id="@+id/navMusicLibraryButton"
             style="@style/navButton">
 
             <TextView
@@ -121,7 +177,6 @@
         </Space>
 
         <LinearLayout
-            android:id="@+id/navGenresButton"
             style="@style/navButton">
 
             <TextView
@@ -141,7 +196,6 @@
         </Space>
 
         <LinearLayout
-            android:id="@+id/navArtistButton"
             style="@style/navButton">
 
             <TextView
@@ -161,11 +215,10 @@
         </Space>
 
         <LinearLayout
-            android:id="@+id/navTagsButtonCurrent"
             style="@style/navButton">
 
             <TextView
-                style="@style/navButtonIconCurrent"
+                style="@style/navButtonIcon"
                 android:background="@drawable/ic_tag_solid" />
 
             <TextView

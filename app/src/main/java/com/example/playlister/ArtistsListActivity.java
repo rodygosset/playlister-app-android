@@ -19,26 +19,25 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GenresListActivity extends AppCompatActivity {
+public class ArtistsListActivity extends AppCompatActivity {
 
     String data;
 
     @Override
     protected void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
-        setContentView(R.layout.activity_view_genres);
-        Utils.initNav(this);
+        setContentView(R.layout.activity_view_artists);
         getData();
     }
-    
+
     public void getData() {
         Context thisContext = this;
-        // get the URL to make the request to 
-        String genresDataURL = Utils.getString(this, R.string.genresURL);
+        // get the URL to make the request to
+        String artistsDataURL = Utils.getString(this, R.string.artistsURL);
         // make a request to the API
         // --> create a Request object
-        StringRequest genresDataRequest = new StringRequest(Request.Method.GET,
-                genresDataURL, new Response.Listener<String>() {
+        StringRequest artistsDataRequest = new StringRequest(Request.Method.GET,
+                artistsDataURL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 //
@@ -67,7 +66,7 @@ public class GenresListActivity extends AppCompatActivity {
                 return hdrs;
             }
         };
-        NetworkRequestQueue.getInstance(this).addToRequestQueue(genresDataRequest);
+        NetworkRequestQueue.getInstance(this).addToRequestQueue(artistsDataRequest);
     }
 
 }
