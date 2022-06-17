@@ -8,15 +8,16 @@
     android:paddingLeft="25dp"
     android:paddingTop="20dp"
     android:paddingRight="25dp"
-    android:paddingBottom="20dp">
+    android:paddingBottom="20dp"
+    android:background="@color/black">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.7">
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="13dp">
 
         <TextView
-            style="@style/songViewIcon"
+            style="@style/listItemIcon"
             android:background="@drawable/ic_music_solid" />
 
     </LinearLayout>
@@ -38,8 +39,9 @@
 
         <TextView
             android:id="@+id/songsListElementPlaylists"
-            style="@style/listItemDescription"
+            style="@style/listItemDataSecondary"
             android:text="@string/songs_list_item_duration_placeholder" />
+
     </LinearLayout>
 
     <LinearLayout

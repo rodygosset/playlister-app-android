@@ -64,9 +64,9 @@ public class PlaylistViewActivity extends AppCompatActivity {
         // go through the array of JSON objects
         for(int i = 0; i < listElements.length(); i++) {
             // create a view for each element in the array
-            UIListElements[i] = (LinearLayout) layoutInflater.inflate(R.layout.playlists_list_item, null);
+            UIListElements[i] = (LinearLayout) layoutInflater.inflate(R.layout.songs_list_item, null);
             try {
-                ((TextView)UIListElements[i].findViewById(R.id.playlistsListElementName)).setText(listElements.getString(i).toUpperCase());
+                ((TextView)UIListElements[i].findViewById(R.id.songsListElementName)).setText(listElements.getString(i).toUpperCase());
 
                 UIListElements[i].setOnClickListener(new View.OnClickListener() {
                     @Override

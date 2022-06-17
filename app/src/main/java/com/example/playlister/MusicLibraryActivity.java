@@ -3,7 +3,9 @@ package com.example.playlister;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +15,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -21,10 +24,17 @@ import java.util.Map;
 
 public class MusicLibraryActivity extends AppCompatActivity {
 
-    String data;
 
     AppContext appContext;
     UserData userData;
+
+    Context thisContext = this;
+
+    String data;
+
+    LinearLayout[] UIListElements;
+
+    JSONArray listElements;
 
     @Override
     protected void onCreate(Bundle savedInstance) {
@@ -34,6 +44,28 @@ public class MusicLibraryActivity extends AppCompatActivity {
         userData = appContext.getUserData();
         Utils.initNav(this);
         getData();
+    }
+
+    public void buildUIList() {
+        LinearLayout listContainer = (LinearLayout) findViewById(R.id.mainListContainer);
+        this.UIListElements = new LinearLayout[listElements.length()];
+        LayoutInflater layoutInflater = (LayoutInflater) getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        // go through the array of JSON objects
+        for(int i = 0; i < listElements.length(); i++) {
+            // create a view for each element in the array
+            UIListElements[i] = (LinearLayout) layoutInflater.inflate(R.layout.songs_list_item, null);
+            try {
+                JSONObject element = listElements.getJSONObject(i);
+                ((TextView)UIListElements[i].findViewById(R.id.songsListElementName)).setText(element.getString("title").toUpperCase());
+
+                listContainer.addView(UIListElements[i], listContainer.getChildCount() - 1);
+            } catch (JSONException e) {
+                Utils.alert(this,
+                        "JSON ERROR",
+                        //Integer.toString(error.networkResponse.statusCode)
+                        e.toString());
+            }
+        }
     }
 
     public void getData() {
@@ -47,10 +79,16 @@ public class MusicLibraryActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 //
-                Utils.alert(thisContext,
+                /*Utils.alert(thisContext,
                         "SUCCESS",
                         //Integer.toString(error.networkResponse.statusCode)
-                        response);
+                        response);*/
+                try {
+                    listElements = new JSONArray(response);
+                    buildUIList();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
         }, new Response.ErrorListener() {
             // in case there's an error
