@@ -13,13 +13,12 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="13dp"
-        android:background="@drawable/gradient_circle">
+        android:layout_height="wrap_content">
 
         <View
-            style="@style/listItemIcon"
-            android:background="@drawable/ic_guitar_solid"/>
+            android:layout_height="50dp"
+            android:layout_width="50dp"
+            android:background="@drawable/ic_compact_disc_solid"/>
     </LinearLayout>
 
     <LinearLayout

@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.android.volley.Response;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -66,18 +68,30 @@ public class PlaylistViewActivity extends AppCompatActivity {
             // create a view for each element in the array
             UIListElements[i] = (LinearLayout) layoutInflater.inflate(R.layout.songs_list_item, null);
             try {
-                ((TextView)UIListElements[i].findViewById(R.id.songsListElementName)).setText(listElements.getString(i).toUpperCase());
-
-                UIListElements[i].setOnClickListener(new View.OnClickListener() {
+                // get the song as a json object
+                String artistName = listElements.getString(i).split(" - ")[0];
+                String songTitle = listElements.getString(i).split(" - ")[1];
+                String URL = Utils.getString(thisContext, R.string.artistsURL) + artistName + "/" + songTitle;
+                int finalI = i;
+                Utils.getData(thisContext, URL, new Response.Listener<String>() {
                     @Override
-                    public void onClick(View view) {
-                        Intent intent = new Intent(thisContext, PlaylistViewActivity.class);
-                        intent.putExtra("jsonData", playlist.toString());
-                        startActivity(intent);
+                    public void onResponse(String response) {
+                        try {
+                            JSONObject song = new JSONObject(response);
+                            ((TextView)UIListElements[finalI].findViewById(R.id.songsListElementName)).setText(song.getString("title").toUpperCase());
+                            JSONArray artists = song.getJSONArray("artists");
+                            ((TextView)UIListElements[finalI].findViewById(R.id.songsListElementArtist)).setText(artists.getString(0).toUpperCase());
+                            listContainer.addView(UIListElements[finalI], listContainer.getChildCount() - 1);
+                        } catch (JSONException e) {
+                            Utils.alert(thisContext,
+                                    "JSON ERROR",
+                                    //Integer.toString(error.networkResponse.statusCode)
+                                    e.toString());
+                        }
                     }
                 });
 
-                listContainer.addView(UIListElements[i], listContainer.getChildCount() - 1);
+
             } catch (JSONException e) {
                 Utils.alert(this,
                         "JSON ERROR",

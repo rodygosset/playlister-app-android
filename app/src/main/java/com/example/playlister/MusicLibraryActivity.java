@@ -57,7 +57,8 @@ public class MusicLibraryActivity extends AppCompatActivity {
             try {
                 JSONObject element = listElements.getJSONObject(i);
                 ((TextView)UIListElements[i].findViewById(R.id.songsListElementName)).setText(element.getString("title").toUpperCase());
-
+                JSONArray artists = element.getJSONArray("artists");
+                ((TextView)UIListElements[i].findViewById(R.id.songsListElementArtist)).setText(artists.getString(0).toUpperCase());
                 listContainer.addView(UIListElements[i], listContainer.getChildCount() - 1);
             } catch (JSONException e) {
                 Utils.alert(this,

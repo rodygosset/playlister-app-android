@@ -18,7 +18,7 @@
 
         <View
             style="@style/listItemIcon"
-            android:background="@drawable/ic_music_solid"/>
+            android:background="@drawable/ic_user_solid"/>
     </LinearLayout>
 
     <LinearLayout

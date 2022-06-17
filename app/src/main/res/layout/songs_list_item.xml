@@ -38,9 +38,9 @@
             android:text="@string/songs_list_item_name_placeholder" />
 
         <TextView
-            android:id="@+id/songsListElementPlaylists"
+            android:id="@+id/songsListElementArtist"
             style="@style/listItemDataSecondary"
-            android:text="@string/songs_list_item_duration_placeholder" />
+            android:text="@string/songs_list_item_artist_placeholder" />
 
     </LinearLayout>
 
