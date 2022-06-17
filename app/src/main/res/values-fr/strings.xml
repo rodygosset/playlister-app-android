@@ -114,4 +114,11 @@
     <string name="playlist_list_item_name_placeholder">NOM DE LA PLAYLIST</string>
     <string name="playlist_list_item_songs_placeholder">chansons</string>
     <string name="playlist_list_item_duration_placeholder">Durée</string>
+    <string name="tags_list_item_name_placeholder">NOM DU TAG</string>
+    <string name="tags_list_item_songs_placeholder">chansons</string>
+    <string name="tags_list_item_playlists_placeholder">playlists</string>
+    <string name="songs_list_item_name_placeholder">NOM DU DE LA CHANSON</string>
+    <string name="songs_list_item_duration_placeholder">MM:SS</string>
+    <string name="songs_list_item_key_placeholder">clé</string>
+    <string name="songs_list_item_bpm_placeholder">X BPM</string>
 </resources>
