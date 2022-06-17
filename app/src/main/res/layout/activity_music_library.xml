@@ -16,21 +16,18 @@
         android:layout_weight="3"
         android:orientation="vertical">
 
-        <LinearLayout
-            style="@style/pageHeader">
+        <LinearLayout style="@style/pageHeader">
 
             <TextView
+                style="@style/pageTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/music_library_title"
-                style="@style/pageTitle"
-                />
+                android:text="@string/music_library_title" />
 
             <Space
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1" >
-            </Space>
+                android:layout_weight="1"></Space>
 
         </LinearLayout>
 
@@ -39,33 +36,135 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp">
+
             <LinearLayout
+                style="@style/playlistCreateButton"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/playlistCreateButton">
+                android:layout_height="wrap_content">
+
                 <TextView
+                    style="@style/playlistCreateButtonText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/playlistCreateButtonText"
-                    android:text="@string/icon_plus"
-                    android:fontFamily="@font/fa_solid_900" />
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/icon_plus" />
+
                 <TextView
+                    style="@style/playlistCreateButtonText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/playlistCreateButtonText"
                     android:text="@string/music_library_button" />
             </LinearLayout>
         </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp">
+
+
+            <LinearLayout
+                android:id="@+id/mainListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp">
+
+                <LinearLayout
+                    android:id="@+id/genresListPseudoElement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="25dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="25dp"
+                    android:paddingBottom="20dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7">
+
+                        <TextView
+                            style="@style/songViewIcon"
+                            android:background="@drawable/ic_music_solid" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp">
+
+
+                        <TextView
+                            android:id="@+id/songsListElementName"
+                            style="@style/listItemName"
+                            android:text="@string/songs_list_item_name_placeholder" />
+
+                        <TextView
+                            android:id="@+id/songsListElementPlaylists"
+                            style="@style/listItemDescription"
+                            android:text="@string/songs_list_item_duration_placeholder" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="0dp">
+
+                        <TextView
+                            android:layout_width="5dp"
+                            android:layout_height="5dp"
+                            android:background="@drawable/circle" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <TextView
+                            android:id="@+id/genresListPseudoElementSongs"
+                            style="@style/listItemDataImportant"
+                            android:text="@string/songs_list_item_key_placeholder" />
+
+                        <TextView
+                            android:id="@+id/genresListPseudoElementPlaylists"
+                            style="@style/listItemData"
+                            android:text="@string/song_view_bpm_placeholder" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center">
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/homeMessage"
                 style="@style/homeLogoutButton"
-                android:id="@+id/homeMessage"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
         </LinearLayout>
 
     </LinearLayout>
@@ -75,10 +174,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/nav"
+        android:gravity="center"
         android:orientation="horizontal"
         android:paddingLeft="30dp"
-        android:paddingRight="30dp"
-        android:gravity="center">
+        android:paddingRight="30dp">
 
         <LinearLayout
             android:id="@+id/navHomeButton"
@@ -86,19 +185,18 @@
 
             <TextView
                 style="@style/navButtonIcon"
-                android:background="@drawable/ic_home_solid"/>
+                android:background="@drawable/ic_home_solid" />
 
             <TextView
                 style="@style/navButtonText"
-                android:text="@string/nav_home"/>
+                android:text="@string/nav_home" />
 
         </LinearLayout>
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <LinearLayout
             android:id="@+id/navMusicLibraryButton"
@@ -110,15 +208,14 @@
 
             <TextView
                 style="@style/navButtonTextCurrent"
-                android:text="@string/nav_music_library"/>
+                android:text="@string/nav_music_library" />
 
         </LinearLayout>
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <LinearLayout
             android:id="@+id/navGenresButton"
@@ -126,19 +223,18 @@
 
             <TextView
                 style="@style/navButtonIcon"
-                android:background="@drawable/ic_guitar_solid"/>
+                android:background="@drawable/ic_guitar_solid" />
 
             <TextView
                 style="@style/navButtonText"
-                android:text="@string/nav_genres"/>
+                android:text="@string/nav_genres" />
 
         </LinearLayout>
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <LinearLayout
             android:id="@+id/navArtistButton"
@@ -150,15 +246,14 @@
 
             <TextView
                 style="@style/navButtonText"
-                android:text="@string/nav_artists"/>
+                android:text="@string/nav_artists" />
 
         </LinearLayout>
 
         <Space
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_weight="1" >
-        </Space>
+            android:layout_weight="1"></Space>
 
         <LinearLayout
             android:id="@+id/navTagsButton"
@@ -170,7 +265,7 @@
 
             <TextView
                 style="@style/navButtonText"
-                android:text="@string/nav_tags"/>
+                android:text="@string/nav_tags" />
 
         </LinearLayout>
 

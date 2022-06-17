@@ -9,6 +9,7 @@
     <color name="faded_white">#BBFFFFFF</color>
     <color name="faded_white_1">#55FFFFFF</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#BCC2C7</color>
     <color name="nav_color">#CC069D98</color>
     <color name="bottom_nav_color">#FF057e7a</color>
     <color name="form_field_background">#1A04625F</color>
