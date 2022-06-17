@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/pageHeader">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/playlists_view_title"
+                style="@style/pageTitle"
+                />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+            </Space>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/playlistCreateButton">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/icon_file"
+                    android:fontFamily="@font/fa_solid_900" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/playlist_view_stats_button" />
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/playlistCreateButton">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/icon_file"
+                    android:fontFamily="@font/fa_solid_900" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/playlists_view_edit_button" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/error"
+                style="@style/playlistCreateButton">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/icon_remove"
+                    android:fontFamily="@font/fa_solid_900" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/playlistCreateButtonText"
+                    android:text="@string/playlists_view_remove_button" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/homeLogoutButton"
+                android:id="@+id/homeMessage"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/nav"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:gravity="center">
+
+        <LinearLayout
+            style="@style/navButton">
+
+            <TextView
+                style="@style/navButtonIconCurrent"
+                android:background="@drawable/ic_home_solid"/>
+
+            <TextView
+                style="@style/navButtonTextCurrent"
+                android:text="@string/nav_home"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <LinearLayout
+            style="@style/navButton">
+
+            <TextView
+                style="@style/navButtonIcon"
+                android:background="@drawable/ic_music_solid" />
+
+            <TextView
+                style="@style/navButtonText"
+                android:text="@string/nav_music_library"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <LinearLayout
+            style="@style/navButton">
+
+            <TextView
+                style="@style/navButtonIcon"
+                android:background="@drawable/ic_guitar_solid"/>
+
+            <TextView
+                style="@style/navButtonText"
+                android:text="@string/nav_genres"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <LinearLayout
+            style="@style/navButton">
+
+            <TextView
+                style="@style/navButtonIcon"
+                android:background="@drawable/ic_users_solid" />
+
+            <TextView
+                style="@style/navButtonText"
+                android:text="@string/nav_artists"/>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" >
+        </Space>
+
+        <LinearLayout
+            style="@style/navButton">
+
+            <TextView
+                style="@style/navButtonIcon"
+                android:background="@drawable/ic_tag_solid" />
+
+            <TextView
+                style="@style/navButtonText"
+                android:text="@string/nav_tags"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
