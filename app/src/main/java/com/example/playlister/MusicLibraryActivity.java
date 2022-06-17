@@ -19,17 +19,18 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ArtistsListActivity extends AppCompatActivity {
+public class MusicLibraryActivity extends AppCompatActivity {
 
     String data;
 
+    AppContext appContext;
     UserData userData;
 
     @Override
     protected void onCreate(Bundle savedInstance) {
         super.onCreate(savedInstance);
-        setContentView(R.layout.activity_view_artists);
-        AppContext appContext = (AppContext) getApplicationContext();
+        setContentView(R.layout.activity_music_library);
+        appContext = (AppContext) getApplicationContext();
         userData = appContext.getUserData();
         Utils.initNav(this);
         getData();
@@ -38,11 +39,11 @@ public class ArtistsListActivity extends AppCompatActivity {
     public void getData() {
         Context thisContext = this;
         // get the URL to make the request to
-        String artistsDataURL = Utils.getString(this, R.string.artistsURL);
+        String songsDataURL = Utils.getString(this, R.string.songsURL);
         // make a request to the API
         // --> create a Request object
-        StringRequest artistsDataRequest = new StringRequest(Request.Method.GET,
-                artistsDataURL, new Response.Listener<String>() {
+        StringRequest songsDataRequest = new StringRequest(Request.Method.GET,
+                songsDataURL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 //
@@ -71,7 +72,7 @@ public class ArtistsListActivity extends AppCompatActivity {
                 return hdrs;
             }
         };
-        NetworkRequestQueue.getInstance(this).addToRequestQueue(artistsDataRequest);
+        NetworkRequestQueue.getInstance(this).addToRequestQueue(songsDataRequest);
     }
 
 }

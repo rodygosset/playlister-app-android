@@ -15,6 +15,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -33,12 +34,17 @@ public class MainActivity extends AppCompatActivity {
     EditText loginFormUserName;
     EditText loginFormPassword;
 
+    AppContext appContext;
+    UserData userData;
+
     Context thisContext = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        appContext = (AppContext) getApplicationContext();
+        userData = appContext.getUserData();
         signUpLink = (TextView) findViewById(R.id.loginFormSignUpLink);
         signUpLink.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -85,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                                 public void onResponse(String response) {
                                     try {
                                         JSONObject userDataAsJSON = new JSONObject(response);
-                                        UserData.getUserData().setUserData(tokenAsJSON.get("token_type").toString(),
+                                        appContext.setUserData(tokenAsJSON.get("token_type").toString(),
                                                 tokenAsJSON.get("access_token").toString(),
                                                 userDataAsJSON.get("username").toString(),
                                                 userDataAsJSON.get("first_name").toString(),

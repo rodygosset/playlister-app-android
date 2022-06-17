@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
+    android:shape="oval">
 
     <gradient
         android:type="linear"
@@ -14,8 +14,5 @@
         android:left="50dp"
         android:bottom="30dp"
         android:right="50dp"
-        />
-    <corners
-        android:radius="100dp"
         />
 </shape>
