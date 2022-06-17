@@ -59,6 +59,15 @@ public class MusicLibraryActivity extends AppCompatActivity {
                 ((TextView)UIListElements[i].findViewById(R.id.songsListElementName)).setText(element.getString("title").toUpperCase());
                 JSONArray artists = element.getJSONArray("artists");
                 ((TextView)UIListElements[i].findViewById(R.id.songsListElementArtist)).setText(artists.getString(0).toUpperCase());
+                ((TextView)UIListElements[i].findViewById(R.id.songsListElementKey)).setText(element.getString("key").toUpperCase());
+                ((TextView)UIListElements[i].findViewById(R.id.songsListElementBPM)).setText(element.getString("bpm").toUpperCase());
+                int songDuration = element.getInt("duration");
+                int minutes = Math.floorDiv(songDuration, 60);
+                int seconds = Math.floorMod(songDuration, 60);
+                String minuteString = minutes == 1 ? Utils.getString(thisContext, R.string.minute_singular) : Utils.getString(thisContext, R.string.minute_plural);
+                String secondString = seconds == 1 ? Utils.getString(thisContext, R.string.second_plural) : Utils.getString(thisContext, R.string.second_plural);
+                String durationString = minutes + " " + minuteString +  ", " + seconds + " " + secondString;
+                ((TextView)UIListElements[i].findViewById(R.id.songsListElementDuration)).setText(durationString);
                 listContainer.addView(UIListElements[i], listContainer.getChildCount() - 1);
             } catch (JSONException e) {
                 Utils.alert(this,

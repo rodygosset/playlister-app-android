@@ -56,7 +56,7 @@
     <string name="edit_tag_form_name">Entrez le nom du tag</string>
     <string name="edit_tag_remove_link"><u>SUPPRIMER</u></string>
     <string name="playlists_view_title">PLAYLISTS ></string>
-    <string name="playlist_view_stats_button">VOIR LES STATISTIQUES</string>
+    <string name="playlist_view_stats_button">VOIR LES STATS</string>
     <string name="playlists_view_edit_button">MODIFIER</string>
     <string name="playlists_view_remove_button">SUPPRIMER</string>
     <string name="artists_view_title">ARTISTES</string>
@@ -125,4 +125,8 @@
     <string name="songs_list_item_key_placeholder">clé</string>
     <string name="songs_list_item_bpm_placeholder">BPM</string>
     <string name="songs_list_item_artist_placeholder">ARTISTE</string>
+    <string name="minute_plural">minutes</string>
+    <string name="minute_singular">minute</string>
+    <string name="second_plural">secondes</string>
+    <string name="second_singular">seconde</string>
 </resources>

@@ -76,7 +76,8 @@
                     android:text="@string/icon_file"
                     android:fontFamily="@font/fa_solid_900" />
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     style="@style/playlistCreateButtonText"
                     android:text="@string/playlists_view_edit_button" />

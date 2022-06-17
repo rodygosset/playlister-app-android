@@ -16,6 +16,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.time.Duration;
+
 public class PlaylistViewActivity extends AppCompatActivity {
 
     UserData userData;
@@ -81,6 +83,15 @@ public class PlaylistViewActivity extends AppCompatActivity {
                             ((TextView)UIListElements[finalI].findViewById(R.id.songsListElementName)).setText(song.getString("title").toUpperCase());
                             JSONArray artists = song.getJSONArray("artists");
                             ((TextView)UIListElements[finalI].findViewById(R.id.songsListElementArtist)).setText(artists.getString(0).toUpperCase());
+                            ((TextView)UIListElements[finalI].findViewById(R.id.songsListElementKey)).setText(song.getString("key").toUpperCase());
+                            ((TextView)UIListElements[finalI].findViewById(R.id.songsListElementBPM)).setText(song.getString("bpm").toUpperCase());
+                            int songDuration = song.getInt("duration");
+                            int minutes = Math.floorDiv(songDuration, 60);
+                            int seconds = Math.floorMod(songDuration, 60);
+                            String minuteString = minutes == 1 ? Utils.getString(thisContext, R.string.minute_singular) : Utils.getString(thisContext, R.string.minute_plural);
+                            String secondString = seconds == 1 ? Utils.getString(thisContext, R.string.second_plural) : Utils.getString(thisContext, R.string.second_plural);
+                            String durationString = minutes + " " + minuteString +  ", " + seconds + " " + secondString;
+                            ((TextView)UIListElements[finalI].findViewById(R.id.songsListElementDuration)).setText(durationString);
                             listContainer.addView(UIListElements[finalI], listContainer.getChildCount() - 1);
                         } catch (JSONException e) {
                             Utils.alert(thisContext,

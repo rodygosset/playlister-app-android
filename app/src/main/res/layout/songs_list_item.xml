@@ -42,6 +42,12 @@
             style="@style/listItemDataSecondary"
             android:text="@string/songs_list_item_artist_placeholder" />
 
+        <TextView
+            android:id="@+id/songsListElementDuration"
+            style="@style/listItemDataSecondary"
+            android:textSize="10dp"
+            android:text="@string/songs_list_item_duration_placeholder" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -67,12 +73,12 @@
         android:paddingRight="10dp">
 
         <TextView
-            android:id="@+id/genresListPseudoElementSongs"
+            android:id="@+id/songsListElementKey"
             style="@style/listItemDataImportant"
             android:text="@string/songs_list_item_key_placeholder" />
 
         <TextView
-            android:id="@+id/genresListPseudoElementPlaylists"
+            android:id="@+id/songsListElementBPM"
             style="@style/listItemData"
             android:text="@string/song_view_bpm_placeholder" />
     </LinearLayout>

@@ -124,4 +124,8 @@
     <string name="songs_list_item_key_placeholder">key</string>
     <string name="songs_list_item_bpm_placeholder">BPM</string>
     <string name="songs_list_item_artist_placeholder">ARTIST</string>
+    <string name="minute_plural">minutes</string>
+    <string name="minute_singular">minute</string>
+    <string name="second_plural">seconds</string>
+    <string name="second_singular">second</string>
 </resources>
