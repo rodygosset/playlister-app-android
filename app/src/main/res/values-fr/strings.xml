@@ -111,4 +111,7 @@
     <string name="genre_list_item_name_placeholder">NOM DU GENRE MUSICAL</string>
     <string name="genre_list_item_songs_placeholder">chansons</string>
     <string name="genre_list_item_playlists_placeholder">playlists</string>
+    <string name="artist_list_item_name_placeholder">NOM DU GENRE</string>
+    <string name="artist_list_item_songs_placeholder">chansons</string>
+    <string name="artist_list_item_playlists_placeholder">playlists</string>
 </resources>
