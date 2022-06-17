@@ -110,4 +110,7 @@
     <string name="genre_list_item_name_placeholder">NAME OF GENRE</string>
     <string name="genre_list_item_songs_placeholder">songs</string>
     <string name="genre_list_item_playlists_placeholder">playlists</string>
+    <string name="tags_list_item_name_placeholder">NAME OF TAG</string>
+    <string name="tags_list_item_songs_placeholder">song</string>
+    <string name="tags_list_item_playlists_placeholder">playlists</string>
 </resources>
