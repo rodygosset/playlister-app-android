@@ -7,4 +7,5 @@
     <item name="tagsURL" type="string">https://playlister-app-backend.herokuapp.com/api/tags/</item>
     <item name="artistsURL" type="string">https://playlister-app-backend.herokuapp.com/api/artists/</item>
     <item name="songsURL" type="string">https://playlister-app-backend.herokuapp.com/api/songs/</item>
+    <item name="playlistsURL" type="string">https://playlister-app-backend.herokuapp.com/api/playlists/</item>
 </resources>

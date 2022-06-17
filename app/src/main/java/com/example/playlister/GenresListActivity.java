@@ -18,6 +18,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class GenresListActivity extends AppCompatActivity {
@@ -51,9 +52,8 @@ public class GenresListActivity extends AppCompatActivity {
             // create a view for each element in the array
             UIListElements[i] = (LinearLayout) layoutInflater.inflate(R.layout.genres_list_item, null);
             try {
-
                 JSONObject element = listElements.getJSONObject(i);
-                ((TextView)UIListElements[i].findViewById(R.id.genresListElementName)).setText(element.getString("name"));
+                ((TextView)UIListElements[i].findViewById(R.id.genresListElementName)).setText(element.getString("name").toUpperCase());
 
                 // make a POST request to the API
                 // to get the number of songs associated to this genre

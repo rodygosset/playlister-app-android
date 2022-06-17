@@ -287,6 +287,16 @@
         <item name="android:ellipsize">end</item>
     </style>
 
+    <style name="listItemDataSecondary">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/faded_white</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
     <style name="listItemDataImportant">
         <item name="android:fontFamily">@font/montserrat_medium</item>
         <item name="android:textSize">12sp</item>
