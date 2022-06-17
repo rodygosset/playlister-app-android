@@ -20,17 +20,19 @@
             style="@style/pageHeader">
 
             <TextView
+                android:id="@+id/viewPlaylistHomeLink"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/playlists_view_title"
-                style="@style/pageTitle"
-                />
+                android:paddingRight="10dp"
+                style="@style/pageTitle" />
 
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="0dp"
-                android:layout_weight="1" >
-            </Space>
+            <TextView
+                android:id="@+id/viewPlaylistHomeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                style="@style/pageTitle" />
 
         </LinearLayout>
 
@@ -115,16 +117,25 @@
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
+        <ScrollView
+            android:paddingTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                style="@style/homeLogoutButton"
-                android:id="@+id/homeMessage"/>
-        </LinearLayout>
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/mainListContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+        </ScrollView>
 
     </LinearLayout>
 
